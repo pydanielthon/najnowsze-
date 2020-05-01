@@ -1,0 +1,43 @@
+{% load static %}
+  <footer class="bg-dark">
+    <div class="container space-2">
+      <div class="row mb-7">
+        <div class="col-lg-3 mb-5 mb-lg-0">
+          <!-- Logo -->
+          <a href="{% url 'app:home' %}" aria-label="TG Website">
+		        <img class="navbar-left" style="max-width:240px; margin-top: -0px;" src="{% static 'assets/img/logos/front-logo-white-5.png' %}" alt="Logo TG Website">
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-2 mb-5 mb-lg-0">
+          <h4 class="h6 text-white font-weight-medium">Website map</h4>
+          <ul class="list-unstyled font-size-1">
+            <li class="py-2"><a class="text-white-70" href="{% url 'app:home' %}">Home</a></li>
+            <li class="py-2"><a class="text-white-70" href="{% url 'realization:home' %}">Work</a></li>
+            <li class="py-2"><a class="text-white-70" href="{% url 'blog:post_list' %}">Opinions&nbsp;&&nbsp;References</a></li>
+            <li class="py-2"><a class="text-white-70" href="{% url 'app:contact' %}">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2 mb-5 mb-lg-0">
+          <h4 class="h6 text-white font-weight-medium">Offer</h4>
+          <ul class="list-unstyled font-size-1">
+            <li class="py-2"><a class="text-white-70" href="{% url 'app:portal' %}">Internet portals</a></li>
+            <li class="py-2"><a class="text-white-70" href="{% url 'app:shop' %}">Internet shops</a></li>
+            <li class="py-2"><a class="text-white-70" href="{% url 'app:on_page_website' %}">One-page websites</a></li>
+            <li class="py-2"><a class="text-white-70" href="{% url 'app:e_marketing' %}">E-marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-5">
+          <h4 class="h6 text-white font-weight-medium">Our newsletter</h4>
+          <ul class="list-unstyled font-size-1">
+            {% for post in best_news %}
+            <li class="py-2"><a class="text-white-70" href="{% url 'blog:single_post' post.slug %}">{{ post.title|truncatechars:50 }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>

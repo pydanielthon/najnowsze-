@@ -1,0 +1,466 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138460085-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138460085-3');
+  </script>
+  <!-- Title -->
+  <title>TG Website | Oferta - marketing i promocja</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{% static 'assets/img/logos/logo-sm.png' %}">
+  
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="{% static 'assets/vendor/font-awesome/css/fontawesome-all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/animate.css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/hs-megamenu/src/hs.megamenu.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/slick-carousel/slick/slick.css' %}">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="{% static 'assets/css/theme.css' %}">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header">
+    <div class="u-header__section">
+
+      <div id="logoAndNav" class="container">
+        <!-- Nav -->
+          {% include "basic/navbar.html" %}
+        <!-- End Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Hero Section -->
+    <div id="SVGheroBottomShape" class="svg-preloader position-relative gradient-half-primary-v5 z-index-2 overflow-hidden">
+      <div class="container space-top-2 space-top-md-5 space-top-lg-4">
+        <!-- Title -->
+        <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
+          <h1 class="display-4 font-size-md-down-5 text-white"><strong class="font-weight-semi-bold">E-marketing i budowanie marki w internecie</strong></h1>
+          <p class="lead text-white-70">Najskuteczniejsze działania e-marketingowe</p>
+        </div>
+        <!-- End Title -->
+
+        <!-- Slick Carousel -->
+        <div class="js-slick-carousel u-slick u-slick--gutters-3 z-index-2"
+             data-slides-show="5"
+             data-slides-scroll="1"
+             data-pagi-classes="d-lg-none text-center u-slick__pagination mt-7 mb-0"
+             data-responsive='[{
+               "breakpoint": 1200,
+               "settings": {
+                 "slidesToShow": 4
+               }
+             }, {
+               "breakpoint": 992,
+               "settings": {
+                 "slidesToShow": 3
+               }
+             }, {
+               "breakpoint": 768,
+               "settings": {
+                 "slidesToShow": 2
+               }
+             }, {
+               "breakpoint": 480,
+               "settings": {
+                 "slidesToShow": 1
+               }
+             }]'>
+          <div class="js-slide mt-1">
+            <!-- Icon Block -->
+            <article class="card border-0 shadow-sm transition-3d-hover mb-3">
+              <div class="card-body bg-primary rounded-top p-5">
+                <div class="u-avatar bg-white rounded p-2 mx-auto">
+                  <img class="img-fluid" src="{% static 'assets/img/160x160/2.jpg' %}" alt="Image Description">
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <div class="mb-3">
+                  <h2 class="h6 mb-0">Google Maps</h2>
+                  <small class="d-block text-secondary">Pozycjonowanie w Google Maps</small>
+                </div>
+                <a class="btn btn-sm btn-block btn-primary" href="{% url 'app:contact' %}">Skontaktuj się</a>
+              </div>
+            </article>
+            <!-- End Icon Block -->
+          </div>
+
+          <div class="js-slide mt-1">
+            <!-- Icon Block -->
+            <article class="card border-0 shadow-sm transition-3d-hover mb-3">
+              <div class="card-body bg-danger rounded-top p-5">
+                <div class="u-avatar bg-white rounded p-2 mx-auto">
+                  <img class="img-fluid" src="{% static 'assets/img/160x160/3.jpg' %}" alt="Image Description">
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <div class="mb-3">
+                  <h2 class="h6 mb-0">Kampanie SMS</h2>
+                  <small class="d-block text-secondary">Spersonalizowane kampanię sms</small>
+                </div>
+                <a class="btn btn-sm btn-block btn-primary" href="{% url 'app:contact' %}">Skontaktuj się</a>
+              </div>
+            </article>
+            <!-- End Icon Block -->
+          </div>
+
+          <div class="js-slide mt-1">
+            <!-- Icon Block -->
+            <article class="card border-0 shadow-sm transition-3d-hover mb-3">
+              <div class="card-body bg-warning rounded-top p-5">
+                <div class="u-avatar bg-white rounded p-2 mx-auto">
+                  <img class="img-fluid" src="{% static 'assets/img/160x160/5.jpg' %}" alt="Image Description">
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <div class="mb-3">
+                  <h2 class="h6 mb-0">Kampanie e-mail</h2>
+                  <small class="d-block text-secondary">Spersonalizowane kampanie e-mail</small>
+                </div>
+                <a class="btn btn-sm btn-block btn-primary" href="{% url 'app:contact' %}">Skontaktuj się</a>
+              </div>
+            </article>
+            <!-- End Icon Block -->
+          </div>
+
+          <div class="js-slide mt-1">
+            <!-- Icon Block -->
+            <article class="card border-0 shadow-sm transition-3d-hover mb-3">
+              <div class="card-body bg-success rounded-top p-5">
+                <div class="u-avatar bg-white rounded p-2 mx-auto">
+                  <img class="img-fluid" src="{% static 'assets/img/160x160/1.jpg' %}" alt="Image Description">
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <div class="mb-3">
+                  <h2 class="h6 mb-0">Google</h2>
+                  <small class="d-block text-secondary">Pozycjonowanie w Google</small>
+                </div>
+                <a class="btn btn-sm btn-block btn-primary" href="{% url 'app:contact' %}">Skontaktuj się</a>
+              </div>
+            </article>
+            <!-- End Icon Block -->
+          </div>
+
+          <div class="js-slide mt-1">
+            <!-- Icon Block -->
+            <article class="card border-0 shadow-sm transition-3d-hover mb-3">
+              <div class="card-body bg-primary rounded-top p-5">
+                <div class="u-avatar bg-white rounded p-2 mx-auto">
+                  <img class="img-fluid" src="{% static 'assets/img/160x160/4.jpg' %}" alt="Image Description">
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <div class="mb-3">
+                  <h2 class="h6 mb-0">Social Media</h2>
+                  <small class="d-block text-secondary">Prowadzenia Fanpage i inne</small>
+                </div>
+                <a class="btn btn-sm btn-block btn-primary" href="{% url 'app:contact' %}">Skontaktuj się</a>
+              </div>
+            </article>
+            <!-- End Icon Block -->
+          </div>
+        </div>
+        <!-- End Slick Carousel -->
+      </div>
+
+      <!-- SVG Bottom Shape -->
+      <figure class="position-absolute right-0 bottom-0 left-0">
+        <img class="js-svg-injector" src="{% static 'assets/svg/components/irregular-shape-1-bottom.svg' %}" alt="Image Description"
+             data-parent="#SVGheroBottomShape">
+      </figure>
+      <!-- End SVG Bottom Shape -->
+
+      <!-- SVG Background Element -->
+      <figure class="position-absolute top-0 right-0 left-0 z-index-n1">
+        <img class="js-svg-injector" src="{% static 'assets/svg/components/bg-elements-9.svg' %}" alt="Image Description"
+             data-parent="#SVGheroBottomShape">
+      </figure>
+      <!-- End SVG Background Element -->
+    </div>
+    <!-- End Hero Section -->
+
+
+    <!-- Features Section -->
+    <div class="container space-bottom-md-3">
+      <!-- Divider -->
+      <div class="w-65 w-lg-50 mx-auto">
+        <hr class="my-0">
+      </div>
+      <!-- End Divider -->
+
+      <div class="row space-top-3">
+        <div class="col-sm-6 col-lg-4 mb-7 mb-sm-9">
+          <!-- Icon Block -->
+          <div class="pr-lg-4">
+            <figure id="icon2" class="svg-preloader ie-height-56 max-width-8 mb-3">
+              <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-2.svg' %}" alt="SVG"
+                   data-parent="#icon2">
+            </figure>
+            <p>Każda realizowana przez nas kampania marketingowa jest tworzona na podstawie najnowszej wiedzy z obszaru e-marketingu w celu osiągnięcia maksymalnych rezultatów.</p>
+          </div>
+          <!-- End Icon Block -->
+        </div>
+
+        <div class="col-sm-6 col-lg-4 mb-7 mb-sm-9">
+          <!-- Icon Block -->
+          <div class="pr-lg-4">
+            <figure id="icon1" class="svg-preloader ie-height-56 max-width-8 mb-3">
+              <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-1.svg' %}" alt="SVG"
+                   data-parent="#icon1">
+            </figure>
+            <p>Do kompanii marketingowych opartych na wyszukiwarce Google poprzez zastosowanie Google AdWords lub naturalne pozycjonowanie korzystamy z naszego wieloletniego doświadczenia w celu maksymalizacji efektów.</p>
+          </div>
+          <!-- End Icon Block -->
+        </div>
+
+        <div class="col-sm-6 col-lg-4 mb-7 mb-sm-9">
+          <!-- Icon Block -->
+          <div class="pr-lg-4">
+            <figure id="icon3" class="svg-preloader ie-height-56 max-width-8 mb-3">
+              <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-3.svg' %}" alt="SVG"
+                   data-parent="#icon3">
+            </figure>
+            <p>Każdą realizowana przez nas kampania marketingowa jest tworzona w systematyczny i strukturyzowany sposób, aby na bieżąco śledzić efekty i mieć możliwość korekcji rozwiązań na te, które są najbardziej skuteczne.</p>
+          </div>
+          <!-- End Icon Block -->
+        </div>
+
+        <div class="col-sm-6 col-lg-4 mb-7 mb-sm-9">
+          <!-- Icon Block -->
+          <div class="pr-lg-4">
+            <figure id="icon4" class="svg-preloader ie-height-56 max-width-8 mb-3">
+              <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-4.svg' %}" alt="SVG"
+                   data-parent="#icon4">
+            </figure>
+			<p>Realizowane przez nas kampanie SMS oraz e-mailowe są zawsze indywidualnie dobrane do potrzeb klienta tak, aby trafić w najskuteczniejszy sposób z przekazem do ich odbiorców.</p>
+          </div>
+          <!-- End Icon Block -->
+        </div>
+
+        <div class="col-sm-6 col-lg-4 mb-7 mb-sm-9">
+          <!-- Icon Block -->
+          <div class="pr-lg-4">
+            <figure id="icon5" class="svg-preloader ie-height-56 max-width-8 mb-3">
+              <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-5.svg' %}" alt="SVG"
+                   data-parent="#icon5">
+            </figure>
+			<p>Firmy mogą rozpocząć z nami współpracę w obszarze e-marketingu oraz budowania marki w internecie już przy bardzo niskim budżecie, który pozwala uzyskać wymierne i silne efekty.</p>
+          </div>
+          <!-- End Icon Block -->
+        </div>
+
+        <div class="col-sm-6 col-lg-4 mb-7 mb-sm-9">
+          <!-- Icon Block -->
+          <div class="pr-lg-4">
+            <figure id="icon6" class="svg-preloader ie-height-56 max-width-8 mb-3">
+              <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-6.svg' %}" alt="SVG"
+                   data-parent="#icon6">
+            </figure>
+            <p>Często korzystamy z nowoczesnych rozwiązań marketingowych, do których inne firmy zajmujące się e-marketingiem nie mają dostępu poprzez wybudowane przez nas struktury kontaktowe.</p>
+          </div>
+          <!-- End Icon Block -->
+        </div>
+
+        <div class="col-sm-6 col-lg-4 mb-7 mb-sm-9">
+          <!-- Icon Block -->
+          <div class="pr-lg-4">
+            <figure id="icon7" class="svg-preloader ie-height-56 max-width-8 mb-3">
+              <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-7.svg' %}" alt="SVG"
+                   data-parent="#icon7">
+            </figure>
+            <p>Przy realizowanych przez nas kampaniach marketingowych dbamy o efekty marketingu szeptanego uważanego za jedną z najskuteczniejszych form reklamy, aby sami klienci polecali Twój produkt innym osobą.</p>
+          </div>
+          <!-- End Icon Block -->
+        </div>
+
+        <div class="col-sm-6 col-lg-4 mb-7 mb-sm-9">
+          <!-- Icon Block -->
+          <div class="pr-lg-4">
+            <figure id="icon8" class="svg-preloader ie-height-56 max-width-8 mb-3">
+              <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-8.svg' %}" alt="SVG"
+                   data-parent="#icon8">
+            </figure>
+            <p>Bez różnicy, w jakiej lokalizacji chciałbyś pozyskać klientów oraz w jakiej branży, znajdziemy dla Ciebie odpowiednie rozwiązanie, abyś zwiększył zyski przy niskich nakładach finansowych.</p>
+          </div>
+          <!-- End Icon Block -->
+        </div>
+
+        <div class="col-sm-6 col-lg-4 mb-7 mb-sm-9 mb-lg-0">
+          <!-- Icon Block -->
+          <div class="pr-lg-4">
+            <figure id="icon9" class="svg-preloader ie-height-56 max-width-8 mb-3">
+              <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-9.svg' %}" alt="SVG"
+                   data-parent="#icon9">
+            </figure>
+            <p>Rozwiązania marketingowe tworzymy zarówno dla klientów korzystających z komputerów, jak i urządzeń mobilnych wpisując się w najnowsze trendy w obszarze e-marketingu i reklamy.</p>
+          </div>
+          <!-- End Icon Block -->
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="w-65 w-lg-50 mx-auto">
+        <hr class="mt-0 mb-9">
+      </div>
+      <!-- End Divider -->
+
+      <div class="text-center">
+        <a href="{% url 'app:contact' %}" class="btn btn-primary transition-3d-hover">Skontaktuj się z nami</a>
+      </div>
+    </div>
+    <!-- End Features Section -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="SVGfooterTopShape" class="svg-preloader position-relative gradient-half-primary-v5">
+    <div class="container space-top-4 space-bottom-1">
+      <!-- Title -->
+      <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5">
+        <h2 class="text-white">Masz <strong class="font-weight-semi-bold">pytania?</strong></h2>
+        <p class="text-white-70 mb-0">Zostaw swój numer telefonu, oddzwonimy  do Ciebie maksymalnie&nbsp;do&nbsp;24h:</p>
+      </div>
+      <!-- End Title -->
+
+      <!-- Form -->
+      <form method="POST" class="w-lg-80 mx-lg-auto" action="/e-marketing/#SVGfooterTopShape">
+	  {% csrf_token %}
+        <div class="row mx-gutters-2">
+          <div class="col-6 col-sm mb-2">
+		    {{ form.number|as_crispy_field }}
+          </div>
+
+          <div class="col-6 col-sm mb-2">
+		    {{ form.data_contact|as_crispy_field }}
+          </div>
+
+          <div class="col-sm mb-2">
+            <button type="submit" class="btn click-me-load btn-block btn-success transition-3d-hover">Proszę o kontakt</button>
+          </div>
+        </div>
+		<small class="text-white">*Zostawiając numer telefonu, akceptujesz <b><a href="{% url 'app:privacy_policy' %}" class="text-white">regulamin i politykę prywatności</a></b>.<small>
+      </form>
+      <!-- End Form -->
+
+      <hr class="opacity-md my-12 text-center">
+
+      <div class="row align-items-lg-center">
+	    
+        <a class="w-md-80 text-center mx-md-auto" href="{% url 'app:home' %}">
+	      <img class="navbar-left mb-2" style="max-width:300px; margin-top: -0px;" src="{% static 'assets/img/logos/logo-white-big.png' %}" alt="Image Description">
+		  <p class="small text-white">&copy; e-BlueDesign. 2019 Wszystkie prawa zastrzeżone.</p>	
+		</a>	
+  
+      </div>
+    </div>
+
+    <!-- SVG Wave Shape -->
+    <figure class="position-absolute top-0 right-0 left-0">
+      <img class="js-svg-injector" src="{% static 'assets/svg/components/wave-1-top-sm.svg' %}" alt="Image Description"
+           data-parent="#SVGfooterTopShape">
+    </figure>
+    <!-- End SVG Wave Shape -->
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to u-go-to" href="#"
+    data-position='{"bottom": 15, "right": 15 }'
+    data-type="fixed"
+    data-offset-top="400"
+    data-compensation="#header"
+    data-show-effect="slideInUp"
+    data-hide-effect="slideOutDown">
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="{% static 'assets/vendor/jquery/dist/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery-migrate/dist/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/popper.js/dist/umd/popper.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/bootstrap.min.js' %}"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="{% static 'assets/vendor/hs-megamenu/src/hs.megamenu.js' %}"></script>
+  <script src="{% static 'assets/vendor/svg-injector/dist/svg-injector.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery-validation/dist/jquery.validate.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/slick-carousel/slick/slick.js' %}"></script>
+
+  <!-- JS Front -->
+  <script src="{% static 'assets/js/hs.core.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.header.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.focus-state.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.validation.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.slick-carousel.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.svg-injector.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.go-to.js' %}"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+    });
+
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of forms
+      $.HSCore.components.HSFocusState.init();
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate');
+
+      // initialization of slick carousel
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+	$(document).ready(function() {
+	  $('.click-me-load').on('click', function() {
+		var $this = $(this);
+		var loadingText = '<i class="spinner-border spinner-border-sm"></i> wczytywanie...';
+		if ($(this).html() !== loadingText) {
+		  $this.data('original-text', $(this).html());
+		  $this.html(loadingText);
+		}
+		setTimeout(function() {
+		  $this.html($this.data('original-text'));
+		}, 2000);
+	  });
+	})
+  </script>
+</body>
+</html>

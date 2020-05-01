@@ -1,0 +1,424 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138460085-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138460085-3');
+  </script>
+  <!-- Title -->
+  <title>TG Website | Kontakt</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{% static 'assets/img/logos/logo-sm.png' %}">
+  
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="{% static 'assets/vendor/font-awesome/css/fontawesome-all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/animate.css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/hs-megamenu/src/hs.megamenu.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/dzsparallaxer/dzsparallaxer.css' %}">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="{% static 'assets/css/theme.css' %}">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header">
+    <div class="u-header__section">
+
+      <div id="logoAndNav" class="container">
+        <!-- Nav -->
+          {% include "basic/navbar.html" %}
+        <!-- End Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN ========== -->
+  <main id="content" role="main">
+    <!-- Hero Section -->
+    <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll"
+         data-options='{direction: "normal"}'>
+      <!-- Apply your Parallax background image here -->
+      <div class="divimage dzsparallaxer--target" style="height: 120%; background-image: url({% static 'assets/img/1920x800/img1.jpg' %});"></div>
+
+      <!-- Content -->
+      <div class="container position-relative space-2 space-top-md-5 space-bottom-md-3 z-index-2">
+        <div class="w-lg-80 text-center mx-auto">
+          <h1 class="display-4 font-size-md-down-5 text-white font-weight-semi-bold">Masz pytania?</h1>
+          <p class="lead text-white">Jeżeli masz pytania lub po prostu chcesz się przywitać, napisz do nas.</p>
+        </div>
+      </div>
+      <!-- End Content -->
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- Contacts Info Section -->
+    <div class="clearfix space-2">
+      <div class="row no-gutters">
+        <div class="col-sm-6 col-lg-4 u-ver-divider u-ver-divider--none-lg">
+          <!-- Contacts Info -->
+          <div class="text-center p-5">
+            <figure id="icon8" class="svg-preloader ie-height-56 max-width-8 mx-auto mb-3">
+              <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-8.svg' %}" alt="SVG"
+                   data-parent="#icon8">
+            </figure>
+            <h2 class="h6 mb-0">Polska</h2>
+            <p class="mb-0">3 Maja 22/2c, 40-096 Katowice</p>
+          </div>
+          <!-- End Contacts Info -->
+        </div>
+
+        <div class="col-sm-6 col-lg-4 u-ver-divider u-ver-divider--none-lg">
+          <!-- Contacts Info -->
+          <div class="text-center p-5">
+            <figure id="icon15" class="svg-preloader ie-height-56 max-width-8 mx-auto mb-3">
+              <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-15.svg' %}" alt="SVG"
+                   data-parent="#icon15">
+            </figure>
+            <h3 class="h6 mb-0">Email</h3>
+            <p class="mb-0">biuro@e-BlueDesign.co</p>
+          </div>
+          <!-- End Contacts Info -->
+        </div>
+
+        <div class="col-sm-6 col-lg-4 u-ver-divider u-ver-divider--none-lg">
+          <!-- Contacts Info -->
+          <div class="text-center p-5">
+            <figure id="icon16" class="svg-preloader ie-height-56 max-width-8 mx-auto mb-3">
+              <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-16.svg' %}" alt="SVG"
+                   data-parent="#icon16">
+            </figure>
+            <h3 class="h6 mb-0">Numer telefonu</h3>
+            <p class="mb-0">(+48) 514-583-389</p>
+          </div>
+          <!-- End Contacts Info -->
+        </div>
+      </div>
+    </div>
+    <!-- End Contacts Info Section -->
+    
+    <div class="text-center">
+      <span class="u-divider u-divider--text">English speaking clients</span>
+    </div>
+ 
+    
+    <!-- Contacts Info Section -->
+    <div class="clearfix space-2">
+      <div class="row no-gutters">
+        <div class="col-sm-6 col-lg-4 u-ver-divider u-ver-divider--none-lg">
+          <!-- Contacts Info -->
+          <div class="text-center p-5">
+            <figure id="icon9" class="svg-preloader ie-height-56 max-width-8 mx-auto mb-3">
+              <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-8.svg' %}" alt="SVG"
+                   data-parent="#icon9">
+            </figure>
+            <h2 class="h6 mb-0">United Kingdom</h2>
+            <p class="mb-0">56 Shoreditch High Street, London, E1 6PQ</p>
+          </div>
+          <!-- End Contacts Info -->
+        </div>
+
+        <div class="col-sm-6 col-lg-4 u-ver-divider u-ver-divider--none-lg">
+          <!-- Contacts Info -->
+          <div class="text-center p-5">
+            <figure id="icon10" class="svg-preloader ie-height-56 max-width-8 mx-auto mb-3">
+              <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-15.svg' %}" alt="SVG"
+                   data-parent="#icon10">
+            </figure>
+            <h3 class="h6 mb-0">Email</h3>
+            <p class="mb-0">biuro@e-BlueDesign.co</p>
+          </div>
+          <!-- End Contacts Info -->
+        </div>
+
+        <div class="col-sm-6 col-lg-4 u-ver-divider u-ver-divider--none-lg">
+          <!-- Contacts Info -->
+          <div class="text-center p-5">
+            <figure id="icon11" class="svg-preloader ie-height-56 max-width-8 mx-auto mb-3">
+              <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-16.svg' %}" alt="SVG"
+                   data-parent="#icon11">
+            </figure>
+            <h3 class="h6 mb-0">Phone Number</h3>
+            <p class="mb-0">(+44) 78-5306-2945</p>
+          </div>
+          <!-- End Contacts Info -->
+        </div>
+      </div>
+    </div>
+    <!-- End Contacts Info Section -->
+    
+
+    <hr class="my-0">
+
+    <!-- Contact Form Section -->
+    <div class="container space-2 space-md-3"  id="ContactFormBasic">
+	  {% if send %}
+	  <div class="alert alert-success alert-dismissible fade show" role="alert">
+	    <h4 class="alert-heading">Wiadomość wysłana!</h4>
+	    <p class="alert-text">Dziękujemy za wysłanie wiadomości, odpowiemy na nią maksymalnie do 24 godzin.</p>
+	    <hr />
+	    <p class="alert-text mb-0">W pilnych sprawach zapraszamy do kontaktu telefonicznego pod <b>+48 514 583 389</b>.</p>
+	    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		  <span aria-hidden="true">×</span>
+	    </button>
+	  </div>
+	  {% endif %}
+      <!-- Title -->
+      <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
+        <span class="btn btn-xs btn-soft-success btn-pill mb-2">Formularz kontaktowy</span>
+        <h2 class="text-primary font-weight-normal"><span class="font-weight-semi-bold">Powiedz nam co potrzebujesz</span></h2>
+      </div>
+      <!-- End Title -->
+
+      <div class="w-lg-80 mx-auto">
+        <!-- Contacts Form -->
+        <form class="js-validate" method="POST" action="/kontakt/#ContactFormBasic">
+		{% csrf_token %}
+          <div class="row">
+            <!-- Input -->
+            <div class="col-sm-6 mb-6">
+              <div class="js-form-message">
+                <label class="form-label">
+			    {{ form.name|as_crispy_field }}
+              </div>
+            </div>
+            <!-- End Input -->
+
+            <!-- Input -->
+            <div class="col-sm-6 mb-6">
+              <div class="js-form-message">
+                <label class="form-label">
+			    {{ form.e_mail|as_crispy_field }}
+              </div>
+            </div>
+            <!-- End Input -->
+
+            <div class="w-100"></div>
+
+            <!-- Input -->
+            <div class="col-sm-6 mb-6">
+              <div class="js-form-message">
+                <label class="form-label">
+			    {{ form.topic|as_crispy_field }}
+              </div>
+            </div>
+            <!-- End Input -->
+
+            <!-- Input -->
+            <div class="col-sm-6 mb-6">
+              <div class="js-form-message">
+                <label class="form-label">
+				  {{ form.phone|as_crispy_field }}
+              </div>
+            </div>
+            <!-- End Input -->
+          </div>
+
+          <!-- Input -->
+          <div class="js-form-message mb-3">
+            <label class="form-label">
+			  {{ form.context|as_crispy_field }}
+            </div>
+			
+			<div class="js-form-message custom-control custom-radio custom-control-inline mb-6">
+			  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required
+			         data-msg="Zaakceptuj regulamin i polityke prywatności."
+                     data-error-class="u-has-error"
+                     data-success-class="u-has-success">
+			  <label class="custom-control-label" for="customRadioInline1">Akceptuje <a href="#">regulamin</a> i <a href="#">polityke prywatności</a></label>
+			</div>
+          </div>
+          <!-- End Input -->
+
+          <div class="text-center">
+            <button type="submit" class="btn click-me-load btn-primary btn-wide transition-3d-hover mb-4">Wyślij wiadomość</button>
+            <p class="small">Odpowiemy na wiadomość maksymalnie do 24 godzin.</p>
+          </div>
+        </form>
+        <!-- End Contacts Form -->
+      </div>
+    </div>
+    <!-- End Contact Form Section -->
+
+    <!-- Google Map -->
+    <div class="container-fluid space-bottom-1">
+      <div id="gMapMultipleMarkers" class="embed-responsive embed-responsive-21by9 u-gmap-interactive min-height-450"
+           data-type="custom"
+           data-lat="50.259525"
+           data-lng="19.0197241"
+           data-zoom="5"
+           data-pin="true"
+           data-multiple-markers="true"
+           data-styles='[[
+            "", "", [
+              {"saturation": -100},
+              {"lightness": 50},
+              {"visibility": "simplified"}
+            ]],[
+              "",
+              "geometry", [
+                {"color": "#f3f3f3"}
+            ]],[
+              "road", "", [
+                {"color": "#ffffff"},
+                {"lightness": 100}
+            ]],[
+              "road",
+              "labels.text.fill", [
+                {"color": "#ffffff"},
+                {"lightness": -50}]
+            ],[
+              "water", "", [
+                {"color": "#377dff"}
+            ]]
+           ]'
+           data-markers-locations='[[
+              "{% static 'assets/img/map-markers/map-marker1.png' %}",
+              "TG Website | 3 Maja 22/2c, 40-096 Katowice",
+              50.259525, 19.0197241,
+              "{% static 'assets/img/150x80/img1.jpg' %}",
+              "Image description",
+              "17:48, April 27, 2017",
+              "United States",
+              "Twisters Sports"
+            ],[
+              "{% static 'assets/img/map-markers/map-marker5.png' %}",
+              "TG Website | 56 Shoreditch High Street, London, E1 6PQ",
+              51.523780, -0.077020,
+              "{% static 'assets/img/150x80/img5.jpg' %}",
+              "Image description",
+              "17:30, May 21, 2017",
+              "United States",
+              "Equinix Data Center"
+            ]]'></div>
+    </div>
+    <!-- End Google Map -->
+  </main>
+  <!-- ========== END MAIN ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  {% include "basic/footer.html" %}
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- JS Global Compulsory -->
+  <script src="{% static 'assets/vendor/jquery/dist/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery-migrate/dist/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/popper.js/dist/umd/popper.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/bootstrap.min.js' %}"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="{% static 'assets/vendor/hs-megamenu/src/hs.megamenu.js' %}"></script>
+  <script src="{% static 'assets/vendor/svg-injector/dist/svg-injector.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery-validation/dist/jquery.validate.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/dzsparallaxer/dzsparallaxer.js' %}"></script>
+  <script src="{% static 'assets/vendor/gmaps/gmaps.min.js' %}"></script>
+
+  <!-- JS Front -->
+  <script src="{% static 'assets/js/hs.core.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.header.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.unfold.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.malihu-scrollbar.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.validation.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.focus-state.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.g-map.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.show-animation.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.svg-injector.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.go-to.js' %}"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+    });
+
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+        afterOpen: function () {
+          $(this).find('input[type="search"]').focus();
+        }
+      });
+
+      // initialization of malihu scrollbar
+      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+      // initialization of show animations
+      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate', {
+        rules: {
+          confirmPassword: {
+            equalTo: '#signupPassword'
+          }
+        }
+      });
+
+      // initialization of forms
+      $.HSCore.components.HSFocusState.init();
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    // initialization of google map
+    function initMap() {
+      $.HSCore.components.HSGMap.init('.js-g-map');
+      $.HSCore.components.HSGMap.init('#gMapMultipleMarkers', {
+        infoWindowTemplate: function (imgsrc, imgalt, date, locationname, title) {
+          return '<div class="u-gmap-interactive__info">' +
+            '<img class="img-fluid mb-2" src="' + imgsrc + '" alt="' + imgalt + '">' +
+            '<small class="d-block text-muted mb-2">' + date + '</small>' +
+            '<h4 class="h6 mb-0">' + title + '</h4>' +
+            '<p class="mb-0">' + locationname + '</p>' +
+            '</div>';
+        }
+      });
+    }
+	$(document).ready(function() {
+	  $('.click-me-load').on('click', function() {
+		var $this = $(this);
+		var loadingText = '<i class="spinner-border spinner-border-sm"></i> wysyłanie...';
+		if ($(this).html() !== loadingText) {
+		  $this.data('original-text', $(this).html());
+		  $this.html(loadingText);
+		}
+		setTimeout(function() {
+		  $this.html($this.data('original-text'));
+		}, 2000);
+	  });
+	})
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-jviqtzKbaTNjnF8Kneha8RMRsuri0WU&callback=initMap" async defer></script>
+</body>
+</html>

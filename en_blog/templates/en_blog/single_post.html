@@ -1,0 +1,362 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138460085-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138460085-3');
+  </script>
+  <!-- Title -->
+  <title>TG Website | Newsletter - {{ object.title }}</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{% static 'assets/img/logos/logo-sm.png' %}">
+
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="{% static 'assets/vendor/font-awesome/css/fontawesome-all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/animate.css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/hs-megamenu/src/hs.megamenu.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css' %}">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="{% static 'assets/css/theme.css' %}">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header">
+    <div class="u-header__section">
+
+      <div id="logoAndNav" class="container">
+        <!-- Nav -->
+          {% include "basic/navbar.html" %}
+        <!-- End Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN ========== -->
+  <main id="content" role="main">
+    <!-- Article Description Section -->
+    <div class="container space-2">
+      <div class="w-lg-60 mx-lg-auto">
+        <div class="mb-4">
+          <h1 class="h2 font-weight-medium">{{ object.title }}</h1>
+        </div>
+
+        <!-- Author -->
+        <div class="border-top border-bottom py-4 mb-5">
+          <div class="row align-items-md-center">
+            <div class="col-md-7 mb-5 mb-md-0">
+              <div class="media align-items-center">
+                <div class="u-avatar">
+                  <img class="img-fluid rounded-circle" src="{{ object.author_img.url }}" alt="Image Description">
+                </div>
+                <div class="media-body font-size-1 ml-3">
+                  <span class="h6 font-weight-medium"><a href="#" onClick="return false">{{ object.author }}</a> <button type="button" class="btn btn-xs btn-soft-primary font-weight-medium transition-3d-hover py-1 px-2 ml-1">{{ object.category }}</button></span>
+                  <span class="d-block text-muted">{{ object.date }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="d-md-flex justify-content-md-end align-items-md-center">
+                <h2 class="text-secondary font-size-1 font-weight-medium text-uppercase mb-0">Udostępnij:</h2>
+
+                <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded-circle ml-2" target="_blank" href="https://www.facebook.com/TG-Website-100682481400631/">
+                  <span class="fab fa-facebook-f btn-icon__inner"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Author -->
+
+        <p>{{ object.subtitle }}</p>
+      </div>
+
+      <div class="my-8">
+        <img class="img-fluid rounded" src="{{ object.img_post_detail.url }}" alt="Image Description">
+      </div>
+
+      <div class="w-lg-60 mx-lg-auto">
+        {{ object.content|safe }}
+      </div>
+
+      <div class="w-lg-60 mx-lg-auto">
+
+        <div class="card bg-img-hero bg-primary text-white text-center p-5 my-4" style="background-image: url({% static 'assets/svg/components/abstract-shapes-11.svg' %});">
+          <h4 class="h5 mb-3">Masz pomysł na portal i szukasz odpowiedniej firmy do jego realizacji?.</h4>
+
+          <!-- Form -->
+          <div class="js-validate w-md-75 mx-md-auto">
+            <div class="js-form-message">
+              <div class="d-flex align-items-center">
+                <a href="{% url 'app:contact' %}" class="btn btn-block btn-outline-white ml-3"><i class="far fa-hand-point-right mr-2"></i> Skontaktuj się i uzyskaj darmową wycene</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Form -->
+        </div>
+
+        <p>Jeżeli jesteś właścicielem swojej strony internetowej, subskrybuj by być na bieżaco z nowymi artykułami tematycznymi.</p>
+
+        <p class="h6 font-weight-normal">Śledź nasz profil na <a class="link-muted" href="https://www.facebook.com/TG-Website-100682481400631/">Facebooku</a>.</p>
+
+        <!-- Badges -->
+        <div class="mt-5">
+          {% for key_words in object.keywords_set.all %}
+          <span class="d-inline-block mr-1 mb-2"><a class="btn btn-xs btn-soft-secondary" href="#">{{ key_words.name }}</a></span>
+          {% endfor %}
+        </div>
+        <!-- End Badges -->
+
+        <!-- Share -->
+        <div class="row justify-content-sm-between align-items-sm-center mt-5">
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center">
+              <h4 class="font-size-1 font-weight-medium text-uppercase mb-0 mr-3">Udostępnij:</h4>
+
+              <a class="btn btn-sm btn-icon btn-soft-dark btn-bg-transparent rounded-circle mr-2" href="https://www.facebook.com/TG-Website-100682481400631/">
+                <span class="fab fa-facebook-f btn-icon__inner"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- End Share -->
+
+        <div class="py-5 my-8 border-top">
+          <div class="mb-4">
+            <h3 class="h5">Komentarze</h3>
+          </div>
+
+          <!-- Comment -->
+          {% for comment in object.comment_set.all %}
+          <div class="border-bottom pb-6 mb-6">
+            <div class="media align-items-center mb-2">
+              <div class="u-avatar mr-3">
+                <img class="img-fluid rounded-circle" src="{% static 'assets/img/100x100/img20.jpg' %}" alt="User image">
+              </div>
+              <div class="media-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="h6 font-weight-medium mb-0">{{ comment.name }}</span>
+                  <small class="text-muted">{{ comment.date }}</small>
+                </div>
+              </div>
+            </div>
+
+            <p>{{ comment.content }}</p>
+
+            <a href="#Comment">
+              <span class="far fa-comments mr-1"></span>
+              Odpowiedz
+            </a>
+          </div>
+          {% endfor %}
+          <!-- End Comment -->
+        </div>
+
+        <div class="mb-5" id="Comment">
+          <h3 class="h5">Opublikuj swój komentarz</h3>
+        </div>
+
+        <!-- Form -->
+        <form class="js-validate">
+          <div class="js-form-message form-group mb-3">
+            <input type="text" class="form-control" name="name" id="inputName" placeholder="Imie" aria-label="Name" required
+                   data-msg="Please enter your name."
+                   data-error-class="u-has-error"
+                   data-success-class="u-has-success">
+          </div>
+
+          <div class="js-form-message form-group mb-3">
+            <input type="email" class="form-control" name="emailAddress" id="emailAddress" placeholder="Adres email" aria-label="Email address" required
+                   data-msg="Please enter a valid email address."
+                   data-error-class="u-has-error"
+                   data-success-class="u-has-success">
+          </div>
+
+          <div class="js-form-message form-group mb-3">
+            <textarea class="form-control" rows="7" id="descriptionTextarea" placeholder="Komentarz" required
+                      data-msg="Please enter your message."
+                      data-error-class="u-has-error"
+                      data-success-class="u-has-success"></textarea>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary btn-wide transition-3d-hover">Zatwierdź</button>
+          </div>
+        </form>
+        <!-- End Form -->
+      </div>
+    </div>
+    <!-- End Article Description Section -->
+
+    <!-- Blog Card Section -->
+    <div class="container">
+      <div class="w-lg-75 border-top space-2 mx-lg-auto">
+        <div class="mb-5">
+          <h3 class="font-weight-medium">Powiązane artykuły</h3>
+        </div>
+
+        <div class="row">
+          {% for object in post_category_1 %}
+          <div class="col-md-6">
+            <!-- Blog Card -->
+            <article class="border-bottom h-100 py-5">
+              <div class="row justify-content-between">
+                <div class="col-6">
+                  <a class="d-inline-block text-muted font-weight-medium text-uppercase small" href="{% url 'blog:single_post' object.slug %}">{{ object.category }}</a>
+                  <h4 class="h6 font-weight-medium mb-0">
+                    <a href="single-article.html">{{ object.navigation_title }}</a>
+                  </h4>
+                </div>
+
+                <div class="col-5">
+                  <img class="img-fluid" src="{{ object.img_post_detail.url }}" alt="IMG - {{ object.title }}">
+                </div>
+              </div>
+            </article>
+            <!-- End Blog Card -->
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+    <!-- End Blog Card Section -->
+
+    <!-- Subscribe Section -->
+    <div class="space-top-2 space-bottom-1">
+      <div class="bg-img-hero" style="background-image: url({% static 'assets/img/bg-shapes/bg5.png' %});">
+        <div class="container space-2 space-bottom-lg-3">
+          <!-- Title -->
+          <div class="w-md-60 text-center mx-auto mb-7">
+            <h2 class="font-weight-semi-bold">Pozostań na bierząco</h2>
+            <p>Otrzymaj jako pierwszy wiadomość o nowych artykułach.</p>
+          </div>
+          <!-- End Title -->
+
+          <!-- Form -->
+          <form class="js-validate w-md-75 w-lg-50 mx-md-auto">
+            <div class="js-form-message">
+              <div class="d-flex align-items-center">
+                <label class="sr-only" for="subscribeSr">Subskrybuj</label>
+                <div class="input-group">
+                  <input type="email" class="form-control" name="email" id="subscribeSr" placeholder="Twój email" aria-label="Your email" required
+                         data-msg="Please enter a valid email address."
+                         data-error-class="u-has-error"
+                         data-success-class="u-has-success">
+                </div>
+                <button type="submit" class="btn btn-primary btn-wide transition-3d-hover ml-3">Zapisz email</button>
+              </div>
+            </div>
+          </form>
+          <!-- End Form -->
+        </div>
+      </div>
+    </div>
+    <!-- End Subscribe Section -->
+  </main>
+  <!-- ========== END MAIN ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  {% include "basic/footer.html" %}
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to u-go-to" href="#"
+    data-position='{"bottom": 15, "right": 15 }'
+    data-type="fixed"
+    data-offset-top="400"
+    data-compensation="#header"
+    data-show-effect="slideInUp"
+    data-hide-effect="slideOutDown">
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="{% static 'assets/vendor/jquery/dist/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery-migrate/dist/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/popper.js/dist/umd/popper.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/bootstrap.min.js' %}"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="{% static 'assets/vendor/hs-megamenu/src/hs.megamenu.js' %}"></script>
+  <script src="{% static 'assets/vendor/svg-injector/dist/svg-injector.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery-validation/dist/jquery.validate.min.js' %}"></script>
+
+  <!-- JS Front -->
+  <script src="{% static 'assets/js/hs.core.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.header.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.unfold.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.malihu-scrollbar.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.validation.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.focus-state.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.show-animation.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.svg-injector.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.go-to.js' %}"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+    });
+
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+        afterOpen: function () {
+          $(this).find('input[type="search"]').focus();
+        }
+      });
+
+      // initialization of malihu scrollbar
+      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+      // initialization of show animations
+      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate', {
+        rules: {
+          confirmPassword: {
+            equalTo: '#signupPassword'
+          }
+        }
+      });
+
+      // initialization of forms
+      $.HSCore.components.HSFocusState.init();
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+  </script>
+</body>
+</html>

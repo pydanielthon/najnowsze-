@@ -1,0 +1,850 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138460085-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138460085-3');
+  </script>
+  <!-- Title -->
+  <title>TG Website - Specjaliści od stron internetowych | Strona główna</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{% static 'assets/img/logos/logo-sm.png' %}">
+
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="{% static 'assets/vendor/font-awesome/css/fontawesome-all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/animate.css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/hs-megamenu/src/hs.megamenu.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/fancybox/jquery.fancybox.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/slick-carousel/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/dzsparallaxer/dzsparallaxer.css' %}">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="{% static 'assets/css/theme.css' %}">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header u-header--floating-md">
+    <div id="logoAndNav" class="container">
+      <div class="u-header__section u-header--floating__inner">
+        {% include "basic/navbar.html" %}
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main" class="overflow-hidden">
+    <!-- Hero Section -->
+    <div class="position-relative">
+      <div class="container space-top-2 space-top-md-5 space-top-lg-4 space-bottom-lg-3">
+        <div class="row">
+          <!-- Info -->
+          <div class="col-lg-5">
+            <div class="mb-5">
+              <h1 class="font-size-md-down-3 font-weight-semi-bold">Specjaliści od portali, serwisów i aplikacji internetowych</h1>
+              <p>Od wielu lat z pasją tworzymy dla naszych Klientów wyjątkowe serwisy, portale i aplikacje internetowe oraz dbamy o ich skuteczną promocję.</p>
+            </div>
+
+            <div class="media align-items-center max-width-35 mb-5">
+              <div class="mr-3">
+                <img class="img-fluid mr-2" src="{% static 'assets/svg/components/python.svg' %}" alt="Sketch" width="32">
+                <img class="img-fluid" src="{% static 'assets/svg/components/bootstrap-layered.svg' %}" alt="Adobe Xd" width="45">
+              </div>
+              <div class="media-body">
+                <p class="small mb-0">Wyjątkowe portale nie powstają na WordPress...</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center mb-8">
+              <a class="btn btn-primary btn-wide transition-3d-hover" href="{% url 'app:valuation' %}">Uzyskaj wycenę</a>
+
+              <!-- Fancybox -->
+              <a class="align-items-center min-width-15 ml-3 ml-lg-5" href="{% url 'en_realization:home' %}">
+                <span class="far fa-arrow-alt-circle-right fa-lg mr-1"></span>
+                <span class="media-body">
+                  Zobacz realizacje
+                </span>
+              </a>
+              <!-- End Fancybox -->
+            </div>
+          </div>
+          <!-- End Info -->
+        </div>
+      </div>
+
+      <!-- Gallery -->
+      <div class="d-none d-lg-block col-lg-7 position-absolute top-0 right-0 transform-rotate-1">
+        <div class="row align-items-end mx-n2">
+          <div class="col-lg-3 px-2 mb-11">
+            <div class="mb-3">
+              <img class="img-fluid shadow-soft rounded" src="{% static 'assets/img/407x472/img6.jpg' %}" alt="Image Description">
+            </div>
+            <div class="mb-3">
+              <img class="img-fluid shadow-soft rounded" src="{% static 'assets/img/407x472/img4.jpg' %}" alt="Image Description">
+            </div>
+            <div class="mb-3">
+              <img class="img-fluid shadow-soft rounded" src="{% static 'assets/img/407x585/img1.jpg' %}" alt="Image Description">
+            </div>
+          </div>
+
+          <div class="col-lg-3 px-2">
+            <div class="mb-3">
+              <img class="img-fluid shadow-soft rounded" src="{% static 'assets/img/407x472/img1.jpg' %}" alt="Image Description">
+            </div>
+            <div class="mb-3">
+              <img class="img-fluid shadow-soft rounded" src="{% static 'assets/img/407x115/img1.jpg' %}" alt="Image Description">
+            </div>
+            <div class="mb-3">
+              <img class="img-fluid shadow-primary-lg rounded" src="{% static 'assets/img/407x283/img1.jpg' %}" alt="Image Description">
+            </div>
+            <div class="mb-3">
+              <img class="img-fluid shadow-soft rounded" src="{% static 'assets/img/407x472/img5.jpg' %}" alt="Image Description">
+            </div>
+            <div class="mb-3">
+              <img class="img-fluid shadow-primary-lg rounded" src="{% static 'assets/img/450x450/img10.jpg' %}" alt="Image Description">
+            </div>
+          </div>
+
+          <div class="col-lg-3 px-2">
+            <div class="mb-3">
+              <img class="img-fluid shadow-soft rounded" src="{% static 'assets/img/407x472/img2.jpg' %}" alt="Image Description">
+            </div>
+            <div class="mb-3">
+              <img class="img-fluid shadow-lg rounded" src="{% static 'assets/img/407x472/img3.jpg' %}" alt="Image Description">
+            </div>
+            <div class="mb-3">
+              <img class="img-fluid shadow-soft rounded" src="{% static 'assets/img/282x500/img3.jpg' %}" alt="Image Description">
+            </div>
+          </div>
+
+          <div class="col-lg-3 px-2 mb-11">
+            <div class="mb-3">
+              <img class="img-fluid shadow-soft rounded" src="{% static 'assets/img/300x360/img1.jpg' %}" alt="Image Description">
+            </div>
+            <div class="mb-3">
+              <img class="img-fluid shadow-soft rounded" src="{% static 'assets/img/407x535/img1.jpg' %}" alt="Image Description">
+            </div>
+            <div class="mb-3">
+              <img class="img-fluid shadow-soft rounded" src="{% static 'assets/img/407x115/img1.jpg' %}" alt="Image Description">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Gallery -->
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- Features Section -->
+    <div class="container space-2 space-lg-3">
+      <!-- Title -->
+      <div class="w-lg-50 text-center mx-lg-auto mb-5">
+        <span class="d-block text-secondary font-size-1 font-weight-medium text-uppercase">TG Website w liczbach</span>
+      </div>
+      <!-- End Title -->
+
+      <!-- Features -->
+      <div id="featuresSVG" class="svg-preloader w-lg-60 mx-lg-auto mb-5">
+        <div class="row mx-n2">
+          <div class="col-sm-4 px-2 mb-3 mb-sm-0">
+            <!-- Icon Block -->
+            <div class="border-dashed text-center rounded p-4">
+              <figure class="ie-height-56 w-100 max-width-8 mx-auto mb-3">
+                <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-7.svg' %}" alt="SVG"
+                     data-parent="#featuresSVG">
+              </figure>
+              <h3 class="h5 mb-0">12</h3>
+              <p class="font-size-1 mb-0">Najlepszych ludzi</p>
+            </div>
+            <!-- End Icon Block -->
+          </div>
+
+          <div class="col-sm-4 px-2 mb-3 mb-sm-0">
+            <!-- Icon Block -->
+            <div class="border-dashed text-center rounded p-4">
+              <figure class="ie-height-56 w-100 max-width-8 mx-auto mb-3">
+                <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-27.svg' %}" alt="SVG"
+                     data-parent="#featuresSVG">
+              </figure>
+              <h4 class="h5 mb-0">99%</h4>
+              <p class="font-size-1 mb-0">Pozytywnych opinii</p>
+            </div>
+            <!-- End Icon Block -->
+          </div>
+
+          <div class="col-sm-4 px-2">
+            <!-- Icon Block -->
+            <div class="border-dashed text-center rounded p-4">
+              <figure class="ie-height-56 w-100 max-width-8 mx-auto mb-3">
+                <img class="js-svg-injector" src="{% static 'assets/svg/icons/icon-40.svg' %}" alt="SVG"
+                     data-parent="#featuresSVG">
+              </figure>
+              <h4 class="h5 mb-0">450+</h4>
+              <p class="font-size-1 mb-0">Wyjątkowych realizacji</p>
+            </div>
+            <!-- End Icon Block -->
+          </div>
+        </div>
+      </div>
+      <!-- End Features -->
+
+      <div class="w-lg-50 text-center mx-lg-auto mb-10">
+        <p>W odpowiedzi na zapotrzebowanie rynkowe stworzyliśmy <b class="text-primary">TG Website</b>, firmę zatrudniającą najlepszych specjalistów w swoich dziedzinach, pracujących w zwinnych rozproszonych zespołach, których celem jest tworzenie niezwykłych portali i stron internetowych.</p>
+      </div>
+
+      <div class="w-lg-65 text-center mx-lg-auto">
+        <div class="row">
+          <div class="col-6 col-md-3 mb-3 mb-md-0">
+            <!-- Icon Block -->
+            <div class="text-center">
+              <a href="{% url 'realization:home' %}">
+                <span class="btn btn-icon btn-white shadow-soft mb-3">
+                  <span class="fas fa-award btn-icon__inner"></span>
+                </span>
+              </a>
+              <h4 class="h6 mb-0">Nasze realizacje</h4>
+              <a class="text-secondary font-size-1" href="{% url 'realization:home' %}">
+                <small class="far fa-hand-point-right fa-lg mr-1"></small>
+                Przejdź
+              </a>
+            </div>
+            <!-- End Icon Block -->
+          </div>
+
+          <div class="col-6 col-md-3 mb-3 mb-md-0">
+            <!-- Icon Block -->
+            <div class="text-center">
+              <a href="{% url 'blog:post_list' %}">
+                <span class="btn btn-icon btn-white shadow-soft mb-3">
+                  <span class="far fa-file-code btn-icon__inner"></span>
+                </span>
+              </a>
+              <h4 class="h6 mb-0">O portalach</h4>
+              <a class="text-secondary font-size-1" href="{% url 'blog:post_list' %}">
+                <small class="far fa-hand-point-right fa-lg mr-1"></small>
+                Przejdź
+              </a>
+            </div>
+            <!-- End Icon Block -->
+          </div>
+
+          <div class="col-6 col-md-3">
+            <!-- Icon Block -->
+            <div class="text-center">
+              <a href="{% url 'app:contact' %}">
+                <span class="btn btn-icon btn-white shadow-soft mb-3">
+                  <span class="fas fa-align-justify btn-icon__inner"></span>
+                </span>
+              </a>
+              <h4 class="h6 mb-0">Skontaktuj się</h4>
+              <a class="text-secondary font-size-1" href="{% url 'app:contact' %}">
+                <small class="far fa-hand-point-right fa-lg mr-1"></small>
+                Przejdź
+              </a>
+            </div>
+            <!-- End Icon Block -->
+          </div>
+
+          <div class="col-6 col-md-3">
+            <!-- Icon Block -->
+            <div class="text-center">
+              <a href="{% url 'app:valuation' %}">
+                <span class="btn btn-icon btn-white shadow-soft mb-3">
+                  <span class="fas fa-hand-holding-usd btn-icon__inner"></span>
+                </span>
+              </a>
+              <h4 class="h6 mb-0">Uzyskaj wycenę</h4>
+              <a class="text-secondary font-size-1" href="{% url 'app:valuation' %}">
+                <small class="far fa-hand-point-right fa-lg mr-1"></small>
+                Przejdź
+              </a>
+            </div>
+            <!-- End Icon Block -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Features Section -->
+
+    <!-- Features Section -->
+    <div class="border-top">
+      <div class="container space-2 space-lg-3">
+        <!-- Title -->
+        <div class="w-lg-50 text-center mx-lg-auto mb-7">
+          <span class="d-block text-secondary font-size-1 font-weight-medium text-uppercase">Nasza oferta</span>
+          <h2 class="h1 font-size-md-down-3 font-weight-semi-bold">3 Obszary specjalizacji</h2>
+          <p>Specjaliści <b class="text-primary">TG Website</b> od lat tworzą niezwykłe realizacje dla niezwykłych klientów. Poznaj naszą ofertę.</p>
+        </div>
+        <!-- End Title -->
+
+        <div class="js-slick-carousel u-slick u-slick--equal-height u-slick--gutters-3 mb-7"
+             data-slides-show="3"
+             data-slides-scroll="1"
+             data-pagi-classes="d-lg-none text-center u-slick__pagination mt-7 mb-0"
+             data-responsive='[{
+               "breakpoint": 992,
+               "settings": {
+                 "slidesToShow": 2
+               }
+             }, {
+               "breakpoint": 768,
+               "settings": {
+                 "slidesToShow": 2
+               }
+             }, {
+               "breakpoint": 576,
+               "settings": {
+                 "slidesToShow": 1
+               }
+             }]'>
+          <div class="js-slide">
+            <!-- Card -->
+            <div class="w-100 bg-soft-primary text-primary text-center rounded p-5">
+              <img class="img-fluid" src="{% static 'assets/img/mockups/img7.png' %}" alt="Image Description">
+              <h4 class="font-weight-semi-bold">Portale internetowe</h4>
+              <p class="font-size-1">Poprzez wykorzystanie najnowszych technologii tworzone przez nas portale wyróżniają się jakością i niezawodnością.</p>
+              <a class="btn btn-sm btn-block btn-primary transition-3d-hover" href="{% url 'app:portal' %}">Czytaj więcej <small class="fas fa-long-arrow-alt-right fa-lg ml-1"></small></a>
+            </div>
+            <!-- End Card -->
+          </div>
+
+          <div class="js-slide">
+            <!-- Card -->
+            <div class="w-100 bg-soft-info text-warning text-center rounded p-5">
+              <img class="img-fluid" src="{% static 'assets/img/mockups/img8.png' %}" alt="Image Description">
+              <h4 class="font-weight-semi-bold">Sklepy internetowe</h4>
+              <p class="font-size-1">Nasze wieloletnie doświadczenie zapewnia tworzonym przez nas sklepom internetowym najwyższy poziom.</p>
+              <a class="btn btn-sm btn-block btn-warning transition-3d-hover" href="{% url 'app:shop' %}">Czytaj więcej <small class="fas fa-long-arrow-alt-right fa-lg ml-1"></small></a>
+            </div>
+            <!-- End Card -->
+          </div>
+
+          <div class="js-slide">
+            <!-- Card -->
+            <div class="w-100 bg-soft-danger text-danger text-center rounded p-5">
+              <img class="img-fluid" src="{% static 'assets/img/mockups/img9.png' %}" alt="Image Description">
+              <h4 class="font-weight-semi-bold">Wyjątkowe wizytówki</h4>
+              <p class="font-size-1">Dzięki naszej kreatywności tworzone strony wizytówki wzbudzają zachwyt i uznanie klientów.</p>
+              <a class="btn btn-sm btn-block btn-danger transition-3d-hover" href="{% url 'app:on_page_website' %}">Czytaj więcej <small class="fas fa-long-arrow-alt-right fa-lg ml-1"></small></a>
+            </div>
+            <!-- End Card -->
+          </div>
+        </div>
+
+        <!-- Fancybox -->
+        <div class="text-center">
+          <a href="{% url 'realization:home' %}">
+            <span class="mr-1">
+              Zobacz nasze realizacje
+            </span>
+            <span class="fas fa-long-arrow-alt-right font-size-2 align-middle"></span>
+          </a>
+        </div>
+        <!-- End Fancybox -->
+      </div>
+    </div>
+    <!-- End Features Section -->
+
+    <!-- Samples Section -->
+    <div class="space-2">
+      <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll bg-white" data-options='{direction: "reverse"}' style="overflow: visible;">
+        <div class="container-fluid px-lg-9">
+          <div class="row justify-content-md-center align-items-center mx-n2 mx-lg-n3">
+            <div class="d-none d-md-inline-block col-md px-2 px-lg-3">
+              <img class="img-fluid shadow-soft rounded mb-3 mb-lg-5" src="{% static 'assets/img/407x472/img6.jpg' %}" alt="Image Description">
+              <img class="img-fluid shadow-soft rounded" src="{% static 'assets/img/407x115/img1.jpg' %}" alt="Image Description">
+            </div>
+            <div class="col-3 col-md px-2 px-lg-3" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"7", mid:"0", final:"-7"}]'>
+              <img class="img-fluid shadow rounded mb-3 mb-lg-5" src="{% static 'assets/img/407x472/img4.jpg' %}" alt="Image Description">
+              <img class="img-fluid shadow rounded" src="{% static 'assets/img/407x283/img1.jpg' %}" alt="Image Description">
+            </div>
+            <div class="col-6 col-md px-2 px-lg-3">
+              <img class="img-fluid shadow-soft rounded mb-3 mb-lg-5" src="{% static 'assets/img/407x472/img5.jpg' %}" alt="Image Description">
+              <img class="img-fluid shadow-soft rounded" src="{% static 'assets/img/407x472/img3.jpg' %}" alt="Image Description">
+            </div>
+            <div class="col-3 col-md px-2 px-lg-3" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"-7", mid:"0", final:"7"}]'>
+              <img class="img-fluid shadow rounded mb-3 mb-lg-5" src="{% static 'assets/img/300x360/img1.jpg' %}" alt="Image Description">
+              <img class="img-fluid shadow rounded" src="{% static 'assets/img/407x535/img1.jpg' %}" alt="Image Description">
+            </div>
+            <div class="d-none d-md-inline-block col-md px-2 px-lg-3">
+              <img class="img-fluid shadow-soft rounded mb-3 mb-lg-5" src="{% static 'assets/img/450x450/img10.jpg' %}" alt="Image Description">
+              <img class="img-fluid shadow-soft rounded" src="{% static 'assets/img/407x472/img2.jpg' %}" alt="Image Description">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Samples Section -->
+
+    <!-- Pricing Section -->
+    <div class="container space-2 space-top-lg-3">
+      <!-- Title -->
+      <div class="w-lg-50 text-center mx-lg-auto mb-7">
+        <span class="d-block text-secondary font-size-1 font-weight-medium text-uppercase">Newsletter TG Website</span>
+        <h2 class="h1 font-size-md-down-3 font-weight-semi-bold">Co warto wiedzieć o serwisach i portalach</h2>
+      </div>
+      <!-- End Title -->
+
+      <div class="w-lg-85 mx-lg-auto">
+        <div class="media align-items-center max-width-35 mx-auto mb-9">
+          <div class="mr-3">
+            <img class="img-fluid mr-2" src="{% static 'assets/svg/components/python.svg' %}" alt="Sketch" width="32">
+            <img class="img-fluid" src="{% static 'assets/svg/components/bootstrap-layered.svg' %}" alt="Adobe Xd" width="45">
+          </div>
+          <div class="media-body">
+            <p class="small mb-0">Wyjątkowe portale nie powstają w WordPress...</p>
+          </div>
+        </div>
+
+        <!-- News Carousel -->
+        <div class="js-slick-carousel u-slick u-slick--equal-height u-slick--gutters-3"
+             data-slides-show="3"
+             data-slides-scroll="1"
+             data-arrows-classes="d-none d-lg-inline-block u-slick__arrow u-slick__arrow--offset u-slick__arrow-centered--y rounded-circle"
+             data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-inner u-slick__arrow-inner--left"
+             data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-inner u-slick__arrow-inner--right"
+             data-pagi-classes="text-center u-slick__pagination mt-7 mb-0"
+             data-responsive='[{
+               "breakpoint": 992,
+               "settings": {
+                 "slidesToShow": 2
+               }
+             }, {
+               "breakpoint": 768,
+               "settings": {
+                 "slidesToShow": 1
+               }
+             }, {
+               "breakpoint": 554,
+               "settings": {
+                 "slidesToShow": 1
+               }
+             }]'>
+          <!-- Blog News -->
+          <a class="js-slide bg-img-hero gradient-overlay-half-dark-v1 transition-3d-hover rounded-pseudo my-4" href="{% url 'blog:single_post' best_news_1.slug %}" style="background-image: url({{ best_news_1.home_img.url }});">
+            <article class="align-self-end w-100 text-center p-6">
+              <h3 class="h4 text-white">{{ best_news_1.title|truncatechars:50 }}</h3>
+              <div class="mt-4">
+                <strong class="d-block text-white-70 mb-2">{{ best_news_1.author }}</strong>
+                <div class="u-avatar mx-auto">
+                  <img class="img-fluid rounded-circle" src="{{ best_news_1.author_img.url }}" alt="Image - {{ best_news_1.author }}">
+                </div>
+              </div>
+            </article>
+          </a>
+          <!-- End Blog News -->
+
+          <!-- Blog News -->  
+          <div class="js-slide position-relative bg-white shadow-sm transition-3d-hover rounded my-4">
+            <article class="align-self-end w-100 text-center p-6">
+              <h3 class="h6 font-weight-normal">" {{ best_news_2.subtitle|truncatechars:260 }} "</h3>
+              <div class="my-4">
+                <strong class="d-block mb-2">{{ best_news_2.author }}</strong>
+                <div class="u-avatar mx-auto">
+                  <img class="img-fluid rounded-circle" src="{{ best_news_2.author_img.url }}" alt="Image - {{ best_news_2.author }}">
+                </div>
+              </div>
+              <a class="btn btn-sm btn-soft-primary btn-wide transition-3d-hover" href="{% url 'blog:single_post' best_news_2.slug %}">Czytaj więcej</a>
+            </article>
+          </div>
+          <!-- End Blog News -->
+
+          <!-- Blog News -->
+          <a class="js-slide bg-img-hero gradient-overlay-half-dark-v1 transition-3d-hover rounded-pseudo my-4" href="{% url 'blog:single_post' best_news_3.slug %}" style="background-image: url({{ best_news_3.home_img.url }});">
+            <article class="align-self-end w-100 text-center p-6">
+              <h3 class="h4 text-white">{{ best_news_3.title|truncatechars:50 }}</h3>
+              <div class="mt-4">
+                <strong class="d-block text-white-70 mb-2">{{ best_news_3.author }}</strong>
+                <div class="u-avatar mx-auto">
+                  <img class="img-fluid rounded-circle" src="{{ best_news_3.author_img.url }}" alt="Image - {{ best_news_3.author }}">
+                </div>
+              </div>
+            </article>
+          </a>
+          <!-- End Blog News -->
+
+          <!-- Blog News -->
+          <div class="js-slide position-relative bg-white shadow-sm transition-3d-hover rounded my-4">
+            <article class="align-self-end w-100 text-center p-6">
+              <h3 class="h6 font-weight-normal">" {{ best_news_4.subtitle|truncatechars:260 }} "</h3>
+              <div class="my-4">
+                <strong class="d-block mb-2">{{ best_news_4.author }}</strong>
+                <div class="u-avatar mx-auto">
+                  <img class="img-fluid rounded-circle" src="{{ best_news_4.author_img.url }}" alt="Image - {{ best_news_4.author }}">
+                </div>
+              </div>
+              <a class="btn btn-sm btn-soft-primary btn-wide transition-3d-hover" href="{% url 'blog:single_post' best_news_4.slug %}">Czytaj więcej</a>
+            </article>
+          </div>
+          <!-- End Blog News -->
+
+          <!-- Blog News -->
+          <a class="js-slide bg-img-hero gradient-overlay-half-dark-v1 transition-3d-hover rounded-pseudo my-4" href="{% url 'blog:single_post' best_news_5.slug %}" style="background-image: url({{ best_news_5.home_img.url }});">
+            <article class="align-self-end w-100 text-center p-6">
+              <h3 class="h4 text-white">{{ best_news_5.title|truncatechars:50 }}</h3>
+              <div class="mt-4">
+                <strong class="d-block text-white-70 mb-2">{{ best_news_5.author }}</strong>
+                <div class="u-avatar mx-auto">
+                  <img class="img-fluid rounded-circle" src="{{ best_news_5.author_img.url }}" alt="Image - {{ best_news_5.author }}">
+                </div>
+              </div>
+            </article>
+          </a>
+          <!-- End Blog News -->
+        </div>
+        <!-- End News Carousel -->
+
+      </div>
+    </div>
+    <!-- End Pricing Section -->
+
+    <!-- FAQ Section -->
+    <div class="container space-bottom-2 space-bottom-lg-3" id="smFAQ">
+      <div class="w-lg-85 mx-lg-auto">
+        <div class="row mx-n2">
+          <div class="col-lg-6 px-2">
+            <!-- Card -->
+            <div class="card mb-3">
+              <div class="card-header card-collapse" id="basicsHeadingOne">
+                <h5 class="mb-0">
+                  <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                          data-toggle="collapse"
+                          data-target="#basicsCollapseOne"
+                          aria-expanded="true"
+                          aria-controls="basicsCollapseOne">
+                    Jak rozpocząć współpracę?
+
+                    <span class="card-btn-arrow">
+                      <span class="fas fa-arrow-down small"></span>
+                    </span>
+                  </button>
+                </h5>
+              </div>
+              <div id="basicsCollapseOne" class="collapse"
+                   aria-labelledby="basicsHeadingOne">
+                <div class="card-body">
+                  Aby rozpocząć współpracę wystarczy, że skontaktujesz się z nami poprzez <b><a href="{% url 'app:contact' %}#ContactFormBasic">formularz kontaktowy</a></b> lub e-mailowo czy też telefoniczne poprzez dane dostępne w zakładce <b><a href="{% url 'app:contact' %}">kontakt</a></b>. 
+                </div>
+              </div>
+            </div>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <div class="card mb-3">
+              <div class="card-header card-collapse" id="basicsHeadingTwo">
+                <h5 class="mb-0">
+                  <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                          data-toggle="collapse"
+                          data-target="#basicsCollapseTwo"
+                          aria-expanded="false"
+                          aria-controls="basicsCollapseTwo">
+                    Uzyskanie wyceny projektu
+
+                    <span class="card-btn-arrow">
+                      <span class="fas fa-arrow-down small"></span>
+                    </span>
+                  </button>
+                </h5>
+              </div>
+              <div id="basicsCollapseTwo" class="collapse"
+                   aria-labelledby="basicsHeadingTwo">
+                <div class="card-body">
+                  Aby uzyskać wycenę swojego projektu możesz wypełnić <b><a href="{% url 'app:valuation' %}">formularz wyceny</a></b> lub skontaktować się z nami telefonicznie czy też e-mailowo poprzez dane dostępne w zakładce <b><a href="{% url 'app:contact' %}">kontakt</a></b>. Wyceny małych i średnich realizacji (do 20 tys. zł) są w pełni darmowe.
+                </div>
+              </div>
+            </div>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <div class="card mb-3">
+              <div class="card-header card-collapse" id="basicsHeadingThree">
+                <h5 class="mb-0">
+                  <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                          data-toggle="collapse"
+                          data-target="#basicsCollapseThree"
+                          aria-expanded="false"
+                          aria-controls="basicsCollapseThree">
+                    Jak wygląda sposób rozliczeń?
+
+                    <span class="card-btn-arrow">
+                      <span class="fas fa-arrow-down small"></span>
+                    </span>
+                  </button>
+                </h5>
+              </div>
+              <div id="basicsCollapseThree" class="collapse"
+                   aria-labelledby="basicsHeadingThree">
+                <div class="card-body">
+                  Stosujemy bardzo uczciwy sposób rozliczeń. Płatności następują wyłącznie po pełnym przedstawieniu zrealizowanego etapu projektu oraz jego akceptacji po stronie klienta. Najczęściej małe i średnie realizacje dzielone są na 4-6 różnych etapów. Zapewnia to wygodę i komfort w płatnościach.
+                </div>
+              </div>
+            </div>
+            <!-- End Card -->
+          </div>
+
+          <div class="col-lg-6 px-2">
+            <!-- Card -->
+            <div class="card mb-3">
+              <div class="card-header card-collapse" id="basicsHeadingFour">
+                <h5 class="mb-0">
+                  <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                          data-toggle="collapse"
+                          data-target="#basicsCollapseFour"
+                          aria-expanded="false"
+                          aria-controls="basicsCollapseFour">
+                    Czy to bezpieczne?
+
+                    <span class="card-btn-arrow">
+                      <span class="fas fa-arrow-down small"></span>
+                    </span>
+                  </button>
+                </h5>
+              </div>
+              <div id="basicsCollapseFour" class="collapse"
+                   aria-labelledby="basicsHeadingFour">
+                <div class="card-body">
+                  Tak, w odróżnieniu od większości firm na rynku nie wymagamy przedpłaty w wysokości 50% realizowanego projektu (dzielimy go na wygodne do spłaty nieduże transze). Przy rozwiązaniu umowy przez klienta lub nieuruchomieniu strony internetowej w pełni zwracamy otrzymane wynagrodzenie oraz wszystkie zaliczki zgodnie z zapisem w naszej umowie <b>"z tytułu realizacji nie przysługuje nam żadne wynagrodzenie"</b>.
+                </div>
+              </div>
+            </div>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <div class="card mb-3">
+              <div class="card-header card-collapse" id="basicsHeadingFive">
+                <h5 class="mb-0">
+                  <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                          data-toggle="collapse"
+                          data-target="#basicsCollapseFive"
+                          aria-expanded="true"
+                          aria-controls="basicsCollapseFive">
+                    Co się dzieje po oddaniu strony internetowej?
+
+                    <span class="card-btn-arrow">
+                      <span class="fas fa-arrow-down small"></span>
+                    </span>
+                  </button>
+                </h5>
+              </div>
+              <div id="basicsCollapseFive" class="collapse"
+                   aria-labelledby="basicsHeadingFive">
+                <div class="card-body">
+                  Po oddaniu strony internetowej nasi klienci otrzymują długą gwarancję w wysokości 24 miesięcy. Zapewniamy również darmowe wsparcie techniczne oraz pomoc programisty.
+                </div>
+              </div>
+            </div>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <div class="card mb-3">
+              <div class="card-header card-collapse" id="basicsHeadingSix">
+                <h5 class="mb-0">
+                  <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                          data-toggle="collapse"
+                          data-target="#basicsCollapseSix"
+                          aria-expanded="false"
+                          aria-controls="basicsCollapseSix">
+                    Jak wygląda proces realizacji?
+
+                    <span class="card-btn-arrow">
+                      <span class="fas fa-arrow-down small"></span>
+                    </span>
+                  </button>
+                </h5>
+              </div>
+              <div id="basicsCollapseSix" class="collapse"
+                   aria-labelledby="basicsHeadingSix">
+                <div class="card-body">
+                  Proces realizacji dzielimy na nieduże kamienie milowe. Po osiągnięciu każdego z nich nasz klient otrzymuje dokładne informacje oraz wgląd do wykonanych części. Dopiero po pełnej akceptacji danego kamienia milowego, realizujemy kolejne.
+                </div>
+              </div>
+            </div>
+            <!-- End Card -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End FAQ Section -->
+
+    <!-- Divider -->
+    <div class="container">
+      <div class="w-lg-65 mx-lg-auto">
+        <hr class="my-0">
+      </div>
+    </div>
+    <!-- End Divider -->
+
+    <!-- Related Products Section -->
+    <div class="container space-2 space-lg-3">
+      <!-- Title -->
+      <div class="w-lg-50 text-center mx-lg-auto mb-7">
+        <span class="d-block text-secondary font-size-1 font-weight-medium text-uppercase">Niezwykłe realizacje, niezwykli klienci</span>
+        <h2 class="h1 font-size-md-down-3 font-weight-semi-bold">Przykładowe realizacje</h2>
+      </div>
+      <!-- End Title -->
+
+      <div class="row mx-n2 mx-lg-n3 mb-5">
+        <div class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
+          <!-- Card -->
+          <a class="card card-text-dark h-100" href="{% url 'realization:realization' "porownywarka-bankowa" %}">
+            <div class="card-body p-4">
+              <img class="img-fluid" src="{% static 'assets/svg/illustrations/visa-card.svg' %}" alt="Image Description">
+            </div>
+            <div class="card-footer border-0 pb-4 px-4">
+              <h4 class="h5 d-flex justify-content-between">
+                Wszystkie banki w&nbsp;jednym miejscu
+                <span class="d-block">
+                  <span class="badge badge-success badge-pill ml-2">NEW</span>
+                </span>
+              </h4>
+              <p class="font-size-1 mb-0">Nowoczesna i dochodowa porównywarka produktów bankowych i pozabankowych.</p>
+            </div>
+          </a>
+          <!-- End Card -->
+        </div>
+
+        <div class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
+          <!-- Card -->
+          <a class="card card-text-dark h-100" href="{% url 'realization:realization' "lokalna-wyszukiwarka-usa" %}">
+            <div class="card-body p-0">
+              <img class="card-img-top" src="{% static 'assets/img/mockups/img10.png' %}" alt="Image Description">
+            </div>
+            <div class="card-footer border-0 pb-4 px-4">
+              <h4 class="h5 d-flex justify-content-between">
+                Lokalna wyszukiwarka na rynku w USA
+                <span class="d-block">
+                  <span class="badge badge-success badge-pill ml-3">NEW</span>
+                </span>
+              </h4>
+              <p class="font-size-1 mb-0">Odpowiadająca na potrzeby klientów niszowa wyszukiwarka gabinetów masażu i masażystów.</p>
+            </div>
+          </a>
+          <!-- End Card -->
+        </div>
+
+        <div class="col-sm-6 col-lg-4 px-2 px-lg-3">
+          <!-- Card -->
+          <a class="card card-text-dark h-100" href="{% url 'realization:realization' "system-marketingowy" %}"">
+            <div class="card-body p-4">
+              <img class="img-fluid" src="{% static 'assets/svg/illustrations/full-stack.svg' %}" alt="Image Description">
+            </div>
+            <div class="card-footer border-0 pb-4 px-4">
+              <h4 class="h5 d-flex justify-content-between">
+                System marketingowy
+                <span class="d-block">
+                  <span class="badge badge-success badge-pill ml-3">NEW</span>
+                </span>
+              </h4>
+              <p class="font-size-1 mb-0">Aplikacja internetowa umożliwiająca budowanie dobrego wizerunku firmy poprzez pozytywne opinie.</p>
+            </div>
+          </a>
+          <!-- End Card -->
+        </div>
+      </div>
+
+      <div class="text-center">
+        <p class="font-size-1">Zastanawiasz się, co możemy stworzyć dla Ciebie? <a href="{% url 'app:valuation' %}">Uzyskaj darmową wycenę.</a></p>
+      </div>
+    </div>
+    <!-- End Related Products Section -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  {% include "basic/footer.html" %}
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Page Preloader -->
+  <div id="jsPreloader" class="page-preloader">
+    <div class="page-preloader__content-centered">
+      <div class="spinner-grow text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  </div>
+  <!-- End Page Preloader -->
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to u-go-to" href="#"
+    data-position='{"bottom": 15, "right": 15 }'
+    data-type="fixed"
+    data-offset-top="400"
+    data-compensation="#header"
+    data-show-effect="slideInUp"
+    data-hide-effect="slideOutDown">
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="{% static 'assets/vendor/jquery/dist/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery-migrate/dist/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/popper.js/dist/umd/popper.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/bootstrap.min.js' %}"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="{% static 'assets/vendor/hs-megamenu/src/hs.megamenu.js' %}"></script>
+  <script src="{% static 'assets/vendor/svg-injector/dist/svg-injector.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/fancybox/jquery.fancybox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/slick-carousel/slick/slick.js' %}"></script>
+  <script src="{% static 'assets/vendor/dzsparallaxer/dzsparallaxer.js' %}"></script>
+
+  <!-- JS Front -->
+  <script src="{% static 'assets/js/hs.core.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.header.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.svg-injector.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.fancybox.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.slick-carousel.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.go-to.js' %}"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+
+      // Page preloader
+      setTimeout(function() {
+        $('#jsPreloader').fadeOut(500)
+      }, 1000)
+    });
+
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of fancybox
+      $.HSCore.components.HSFancyBox.init('.js-fancybox');
+
+      // initialization of slick carousel
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+  </script>
+</body>
+</html>

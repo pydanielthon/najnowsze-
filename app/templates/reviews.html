@@ -1,0 +1,570 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138460085-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138460085-3');
+  </script>
+  <!-- Title -->
+  <title>TG Website | Opinie klientów</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{% static 'assets/img/logos/logo-sm.png' %}">
+
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="{% static 'assets/vendor/font-awesome/css/fontawesome-all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/animate.css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/hs-megamenu/src/hs.megamenu.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/fancybox/jquery.fancybox.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/animate.css/animate.min.css' %}">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="{% static 'assets/css/theme.css' %}">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header">
+    <div class="u-header__section">
+
+      <div id="logoAndNav" class="container">
+        <!-- Nav -->
+          {% include "basic/navbar.html" %}
+        <!-- End Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Hero Section -->
+    <div class="container space-2">
+      <div class="row justify-content-lg-between align-items-center">
+        <div class="col-lg-5 mb-7 mb-lg-0">
+          <div class="mb-4">
+            <h1 class="font-weight-semi-bold">Opinie klientów o TG&nbsp;Website (5.0/{{ count_all_reviews }})<br><span class="fas fa-star text-warning"></span><span class="fas fa-star text-warning"></span><span class="fas fa-star text-warning"></span><span class="fas fa-star text-warning"></span><span class="fas fa-star text-warning"></span></h1>
+            <p>Aby ułatwić wybór odpowiedniego wykonawcy, gromadzimy wszystkie opinie i referencje na temat naszej firmy <b class="text-dark">TG Website</b>. Sprawdź, co naprawdę mają do powiedzenia o nas nasi Klienci.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <!-- SVG Illustration -->
+          <figure id="SVGHero" class="svg-preloader ie-hiker-man">
+            <img class="js-svg-injector" src="{% static 'assets/svg/illustrations/communicating-men.svg' %}" alt="Image Description"
+                 data-parent="#SVGHero">
+          </figure>
+          <!-- End SVG Illustration -->
+        </div>
+      </div>
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- Apps Section -->
+    <div class="container space-bottom-2">
+      <div class="row">
+        <div class="col-lg-3 u-ver-divider u-ver-divider--none-lg mb-7 mb-lg-0">
+          <div class="mr-lg-3">
+            <div class="navbar-expand-lg navbar-expand-lg-collapse-block">
+              <!-- Responsive Toggle Button -->
+              <button class="btn btn-block btn-gray d-lg-none" type="button" data-toggle="collapse" data-target="#sidebarNav" aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="d-flex justify-content-between align-items-center">
+                  <span>Mapa strony</span>
+                  <span class="fas fa-angle-right"></span>
+                </span>
+              </button>
+              <!-- End Responsive Toggle Button -->
+
+              <div id="sidebarNav" class="collapse navbar-collapse">
+                <div class="mt-5 mt-lg-0">
+                  <h2 class="h6 font-weight-semi-bold">Mapa strony</h2>
+
+                  <!-- List Group -->
+                  <ul class="list-group list-group-flush list-group-borderless mb-0">
+                    <li>
+                      <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="{% url 'app:home' %}">
+                        Strona główna
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="{% url 'realization:home' %}">
+                        Realizacje
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- End List Group -->
+                </div>
+
+                <div class="mt-5">
+                  <h3 class="h6 font-weight-semi-bold">Oferta</h3>
+
+                  <!-- List Group -->
+                  <ul class="list-group list-group-flush list-group-borderless mb-0">
+                    <li>
+                      <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="{% url 'app:portal' %}">
+                        Portale internetowe
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="{% url 'app:shop' %}">
+                        Sklepy internetowe
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="{% url 'app:on_page_website' %}">
+                        Strony wizytówki
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="{% url 'app:e_marketing' %}">
+                        Marketing i promocja
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- End List Group -->
+                </div>
+
+                <div class="mt-5">
+                  <h3 class="h6 font-weight-semi-bold">Pozostałe</h3>
+
+                  <!-- List Group -->
+                  <ul class="list-group list-group-flush list-group-borderless mb-0">
+                    <li>
+                      <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="{% url 'app:contact' %}">
+                        Kontakt
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="{% url 'blog:post_list' %}">
+                        Blog
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="{% url 'app:valuation' %}">
+                        Wycena online
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="{% url 'app:privacy_policy' %}">
+                        Polityka prywatności
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="{% url 'en_app:home' %}">
+                        English version
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  <!-- End List Group -->
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+          <div class="ml-lg-2">
+            
+            <!-- Title -->
+            <div id="reviews" class="mb-3">
+              <h3 class="h4 mb-0">Dodaj nową opinie</h3>
+            </div>
+            <!-- End Title -->
+          
+            <div class="row mx-n2 mb-7">
+              <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                <!-- Card -->
+                <a class="card card-frame h-100" href="https://oferia.pl/wykonawca/tg-website/1156694" target="_blank">
+                  <div class="card-body bg-success rounded-top p-5">
+                    <div class="u-lg-avatar bg-white rounded p-2 mx-auto">
+                      <img class="img-fluid" src="{% static 'assets/img/160x160/img37.jpg' %}" alt="Image Description">
+                    </div>
+                  </div>
+                  <div class="card-body p-4">
+                    <div class="d-flex align-items-center mb-1">
+                      <span class="d-block text-dark font-weight-medium">Oferia.pl ({{ count_oferia }}) <br> <span class="fas fa-star text-warning"></span><span class="fas fa-star text-warning"></span><span class="fas fa-star text-warning"></span><span class="fas fa-star text-warning"></span><span class="fas fa-star text-warning"></span></span>
+                    </div>
+                    <span class="d-block text-secondary font-size-1">Zobacz lub dodaj opinie o naszej firmy w serwisie <b>Oferia.pl</b></span>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+
+              <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                <!-- Card -->
+                <a class="card card-frame h-100" href="https://www.google.com/maps?cid=13401457355266543180&hl=en-GB" target="_blank">
+                  <div class="card-body bg-danger rounded-top p-5">
+                    <div class="u-lg-avatar bg-white rounded p-2 mx-auto">
+                      <img class="img-fluid" src="{% static 'assets/img/160x160/img17.png' %}" alt="Image Description">
+                    </div>
+                  </div>
+                  <div class="card-body p-4">
+                    <div class="d-flex align-items-center mb-1">
+                      <span class="d-block text-dark font-weight-medium">Google Maps ({{ count_google }}) <br> <span class="fas fa-star text-warning"></span><span class="fas fa-star text-warning"></span><span class="fas fa-star text-warning"></span><span class="fas fa-star text-warning"></span><span class="fas fa-star text-warning"></span></span>
+                    </div>
+                    <span class="d-block text-secondary font-size-1">Sprawdź lub dodaj opinie o naszej firmy w serwisie <b>Google Maps</b></span>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+
+              <div class="col-sm-6 col-md-4 px-2">
+                <!-- Card -->
+                <a class="card card-frame h-100" href="https://www.oferteo.pl/e-bluedesign/firma/3915587" target="_blank">
+                  <div class="card-body bg-warning rounded-top p-5">
+                    <div class="u-lg-avatar bg-white rounded p-2 mx-auto">
+                      <img class="img-fluid" src="{% static 'assets/img/160x160/img36.jpg' %}" alt="Image Description">
+                    </div>
+                  </div>
+                  <div class="card-body p-4">
+                    <div class="d-flex align-items-center mb-1">
+                      <span class="d-block text-dark font-weight-medium">Oferteo.pl ({{ count_oferteo }}) <br> <span class="fas fa-star text-warning"></span><span class="fas fa-star text-warning"></span><span class="fas fa-star text-warning"></span><span class="fas fa-star text-warning"></span><span class="fas fa-star text-warning"></span></span>
+                    </div>
+                    <span class="d-block text-secondary font-size-1">Sprawdź lub dodaj opinie o naszej firmy w serwisie <b>Oferteo.pl</b></span>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+            </div>
+
+            <!-- Title -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h3 class="h6 font-weight-semi-bold mb-0">TG Website w social mediach</h3>
+            </div>
+            <!-- End Title -->
+
+            <div class="row mx-n2 mb-7">
+              <!-- Card -->
+              <div class="col-sm-6 col-md-6 px-2 mb-3">
+                <div class="card card-frame h-100">
+                  <a class="card-body" href="https://www.facebook.com/TG-Website-100682481400631/" target="_blank">
+                    <div class="media align-items-center">
+                      <div class="u-sm-avatar mr-3">
+                        <img class="img-fluid" src="{% static 'assets/img/160x160/img20.png' %}" alt="Image Description">
+                      </div>
+                      <div class="media-body">
+                        <div class="d-flex align-items-center">
+                          <span class="d-block text-dark font-weight-medium">Facebook ({{ count_facebook }})</span>
+                        </div>
+                        <small class="d-block text-secondary">Sprawdź nasz fanpage w serwisie Facebook</small>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- End Card -->
+
+              <!-- Card -->
+              <div class="col-sm-6 col-md-6 px-2 mb-3">
+                <div class="card card-frame h-100">
+                  <a class="card-body" href="https://www.instagram.com/tgwebsite/" target="_blank">
+                    <div class="media align-items-center">
+                      <div class="u-sm-avatar mr-3">
+                        <img class="img-fluid" src="{% static 'assets/img/160x160/img38.png' %}" alt="Image Description">
+                      </div>
+                      <div class="media-body">
+                        <div class="d-flex align-items-center">
+                          <span class="d-block text-dark font-weight-medium">Instagram</span>
+                        </div>
+                        <small class="d-block text-secondary">Zobacz nasz fanpage w serwisie Instagram</small>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- End Card -->
+              
+            </div>
+            
+            <!-- Title -->
+            <div id="reviews" class="mb-5 mt-3">
+              <h3 class="h4 mb-1" id="all_reviews">Lista opinii i referencji <span class="text-muted font-size-1">({{ reviews.count }})</span></h3>
+              <div class="position-relative">
+                <a id="basicDropdownHoverInvoker" class="dropdown-nav-link dropdown-toggle" href="javascript:;" role="button"
+                   aria-controls="basicDropdownHover"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                   data-unfold-event="hover"
+                   data-unfold-target="#basicDropdownHover"
+                   data-unfold-type="css-animation"
+                   data-unfold-duration="300"
+                   data-unfold-delay="300"
+                   data-unfold-hide-on-scroll="true"
+                   data-unfold-animation-in="slideInUp"
+                   data-unfold-animation-out="fadeOut">
+                  Pokaż {% if sort_reviews %}opinie {{ sort_reviews }} {% else %}wszystkie{% endif %}
+                </a>
+
+                <div id="basicDropdownHover" class="dropdown-menu dropdown-unfold" aria-labelledby="basicDropdownHoverInvoker">
+                  <a class="dropdown-item" href="{% url 'app:reviews' %}#all_reviews">Pokaż wszystkie</a>
+                  <a class="dropdown-item" href="?sort=Google#all_reviews">Tylko opinie z Google Maps</a>
+                  <a class="dropdown-item" href="?sort=Oferia#all_reviews">Tylko opinie z Oferi</a>
+                  <a class="dropdown-item" href="?sort=Oferteo#all_reviews">Tylko opinie z Oferteo</a>
+                  <a class="dropdown-item" href="?sort=Facebook#all_reviews">Tylko opinie z Facebooka</a>
+                  <a class="dropdown-item" href="?sort=PisemneReferencje#all_reviews">Tylko pisemne referencje</a>
+                </div>
+              </div>
+            </div>
+            <!-- End Title -->
+            
+            <div class="infinite-container" id="reviews_single">
+              {% for review in numbers %}
+              <!-- Reviews -->
+              <div  class="infinite-item">
+                <div>
+                  <!-- Author -->
+                  <div class="media mb-3">
+                    <span class="btn btn-icon 
+                    {% if review.place_review == "Oferia" %}
+                    btn-success
+                    {% elif review.place_review == "Google Maps" %}
+                    btn-danger
+                    {% elif review.place_review == "Oferteo" %}
+                    btn-warning
+                    {% elif review.place_review == "Facebook" %}
+                    btn-primary
+                    {% elif review.place_review == "Pisemna referencja" %}
+                    btn-info
+                    {% else %}
+                    btn-secondary
+                    {% endif %}
+                    mr-3 rounded-circle">
+                      <span class="btn-icon__inner">{{ review.owner|make_list|first }}</span>
+                    </span>
+
+                    <div class="media-body align-self-center">
+                      <h4 class="d-inline-block mb-1">
+                        <a class="d-block h6 mb-0" href="{{ review.url_comment }}" target="_blank">{{ review.owner }}</a>
+                      </h4>
+                      {% if review.write_reverence %}
+                      <br><b class="text-warning">Pozytywna referencja</b>
+                      {% else %}
+                      <ul class="list-inline text-warning small mb-0">
+                        <li class="list-inline-item mx-0">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="list-inline-item mx-0">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="list-inline-item mx-0">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="list-inline-item mx-0">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="list-inline-item mx-0">
+                          <span class="fas fa-star text-warning"></span>
+                        </li>
+                      </ul>
+                      {% endif %}
+                    </div>
+
+                    <div class="media-body text-right">
+                      <small class="d-block text-muted">{{ review.date }}</small>
+                    </div>
+                  </div>
+                  <!-- End Author -->
+
+                  <p>{{ review.description }}</p>
+
+                  <!-- Likes/Reply -->
+                  <ul class="list-inline d-flex">
+                    <li class="list-inline-item">
+                      <div class="text-secondary">
+                        {% if review.write_reverence %}
+                        Referencja pisemna
+                        </a>
+                        {% else %}
+                        Opinia dodana w <a href="{{ review.url_media }}" 
+                        class="
+                        {% if review.place_review == "Oferia" %}
+                        text-success
+                        {% elif review.place_review == "Google Maps" %}
+                        text-danger
+                        {% elif review.place_review == "Oferteo" %}
+                        text-warning
+                        {% elif review.place_review == "Facebook" %}
+                        text-primary
+                        {% elif review.place_review == "Pisemna referencja" %}
+                        text-info
+                        {% else %}
+                        text-secondary
+                        {% endif %}
+                        " 
+                        target="_blank"><b>{{ review.place_review }}</b></a>
+                        {% endif %}
+                      </div>
+                    </li>
+                    <li class="list-inline-item ml-auto">
+                      {% if review.write_reverence %}
+                      <a class="js-fancybox" href="javascript:;"
+                         data-src="{{ review.reference_img.url }}"
+                         data-caption="Front in frames - image #01"
+                         data-speed="700">
+                        <button class="btn btn-sm btn-warning transition-3d-hover"><span class="far fa-eye mr-2"></span> Zobacz referencje</button>
+
+                        <span class="u-media-viewer__container">
+                          <span class="u-media-viewer__icon">
+                            <span class="fas fa-plus u-media-viewer__icon-inner"></span>
+                          </span>
+                        </span>
+                      </a>
+                      {% else %}
+                      <a class="btn btn-sm 
+                      {% if review.place_review == "Oferia" %}
+                      btn-soft-success
+                      {% elif review.place_review == "Google Maps" %}
+                      btn-soft-danger
+                      {% elif review.place_review == "Oferteo" %}
+                      btn-soft-warning
+                      {% elif review.place_review == "Facebook" %}
+                      btn-soft-primary
+                      {% else %}
+                      btn-soft-secondary
+                      {% endif %}
+                      transition-3d-hover" href="{{ review.url_comment }}" target="_blank">
+                        <span class="fas fa-hand-point-right mr-2"></span>
+                        Zobacz opinie
+                      </a>
+                      {% endif %}
+                    </li>
+                  </ul>
+                  <!-- End Likes/Reply -->
+                </div>
+                <!-- End Reviews -->
+                <hr class="my-7">
+              </div>
+              {% endfor %}
+            </div>
+            
+            <!-- Load more -->
+            {% if numbers.has_next %}
+            <div class="mt-4 text-center">
+              <a href="?page={{ numbers.next_page_number }}" class="btn btn-block btn-soft-primary transition-3d-hover mb-5 infinite-more-link">Wczytaj więcej</a>
+            </div>
+            {% endif %}
+            <!-- end pagination -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Apps Section -->
+
+    <!-- CTA Section -->
+    <div class="container space-1">
+      <div class="card p-5">
+        <div class="row justify-content-lg-between align-items-lg-center text-center text-lg-left">
+          <div class="col-lg-4 mb-3 mb-lg-0">
+            <h3 class="h4 font-weight-medium mb-0">Masz pytania lub potrzebujesz wyceny?</h3>
+          </div>
+          <div class="col-lg-7 text-lg-right">
+            <span class="mr-2">
+              <a class="btn btn-soft-primary transition-3d-hover px-md-5 mb-2" href="{% url 'app:valuation' %}">Uzyskaj wycene</a>
+            </span>
+            <a class="btn btn-primary transition-3d-hover px-md-5 mb-2" href="{% url 'app:contact' %}">Skontaktuj się z nami</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End CTA Section -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  {% include "basic/footer.html" %}
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to u-go-to" href="#"
+    data-position='{"bottom": 15, "right": 15 }'
+    data-type="fixed"
+    data-offset-top="400"
+    data-compensation="#header"
+    data-show-effect="slideInUp"
+    data-hide-effect="slideOutDown">
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
+  </a>
+  <!-- End Go to Top -->
+  
+  <!-- Infinite Scroll -->
+  <script src="{% static 'assets/js/jquery-3.1.1.min.js' %}"></script>
+  <script src="{% static 'assets/js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'assets/js/infinite.min.js' %}"></script>
+  <script>
+  var infinite = new Waypoint.Infinite({
+    element: $('.infinite-container')[0]
+  });
+  </script>
+
+  <!-- JS Global Compulsory -->
+  <script src="{% static 'assets/vendor/jquery/dist/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery-migrate/dist/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/popper.js/dist/umd/popper.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/bootstrap.min.js' %}"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="{% static 'assets/vendor/hs-megamenu/src/hs.megamenu.js' %}"></script>
+  <script src="{% static 'assets/vendor/svg-injector/dist/svg-injector.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/fancybox/jquery.fancybox.min.js' %}"></script>
+
+  <!-- JS Front -->
+  <script src="{% static 'assets/js/hs.core.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.header.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.svg-injector.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.go-to.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.fancybox.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.unfold.js' %}"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+    });
+
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+  </script>
+  <script>
+    $(document).on('ready', function () {
+      // initialization of popups
+      $.HSCore.components.HSFancyBox.init('.js-fancybox');
+    });
+  </script>
+  <script>
+    $(document).on('ready', function () {
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
+    });
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,622 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138460085-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138460085-3');
+  </script>
+  <!-- Title -->
+  <title>Classic Marketing | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="{% static 'assets/vendor/font-awesome/css/fontawesome-all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/animate.css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/hs-megamenu/src/hs.megamenu.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/slick-carousel/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/fancybox/jquery.fancybox.css' %}">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="{% static 'assets/css/theme.css' %}">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  {% include "basic/header.html" %}
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN ========== -->
+  <main id="content" role="main">
+    <!-- Hero Section -->
+    <div id="SVGheroComponents" class="svg-preloader bg-primary position-relative overflow-hidden">
+      <!-- Content -->
+      <div class="container position-relative space-3 space-top-md-5 space-lg-4 z-index-2">
+        <!-- Title -->
+        <div class="text-center mb-7">
+          <div class="w-lg-80 mx-auto">
+            <h1 class="display-4 font-size-md-down-5 text-white mb-3">Strona <span class="font-weight-semi-bold">www</span> dla Twojej firmy</h1>
+          </div>
+          <div class="w-md-80 w-lg-60 mx-auto">
+            <p class="lead text-white-70">Skontaktuj się z nami i sprawdź, co możemy zrobić dla Twojej firmy w obszarze stron internetowych oraz rozwiązań e-marketingu.</p>
+          </div>
+        </div>
+        <!-- End Title -->
+
+        <!-- Subscribe Form -->
+        <form class="js-validate js-form-message w-md-50 w-lg-40 mx-auto">
+          <label class="sr-only" for="heroSubscribeSrEmail">Enter your email address</label>
+          <div class="input-group input-group-lg input-group-borderless input-group-pill">
+            <input type="email" class="form-control" name="email" id="heroSubscribeSrEmail" placeholder="Podaj swój e-mail adres" aria-label="Podaj e-mail adres" aria-describedby="heroSubscribeButton" required>
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-white text-primary" id="heroSubscribeButton">
+                <span class="fas fa-paper-plane"></span>
+              </button>
+            </div>
+          </div>
+        </form>
+        <!-- End Subscribe Form -->
+      </div>
+      <!-- End Content -->
+
+      <!-- SVG Top Left Shapes -->
+      <figure class="position-absolute top-0 left-0 w-60 ie-double-ellipse-top-left">
+        <img class="js-svg-injector" src="{% static 'assets/svg/components/double-ellipse-top-left.svg' %}" alt="Image Description"
+             data-parent="#SVGheroComponents">
+      </figure>
+      <!-- End SVG Top Left Shapes -->
+
+      <!-- SVG Bottom Right Shapes -->
+      <figure class="position-absolute right-0 bottom-0 w-15 ie-double-ellipse-bottom-right">
+        <img class="js-svg-injector" src="{% static 'assets/svg/components/double-ellipse-bottom-right.svg' %}" alt="Image Description"
+             data-parent="#SVGheroComponents">
+      </figure>
+      <!-- End SVG Bottom Right Shapes -->
+
+      <!-- SVG Bottom Shape -->
+      <figure class="position-absolute right-0 bottom-0 left-0">
+        <img class="js-svg-injector" src="{% static 'assets/svg/components/curved-1.svg' %}" alt="Image Description"
+             data-parent="#SVGheroComponents">
+      </figure>
+      <!-- End SVG Bottom Shape -->
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- Clients Section -->
+    <div class="container space-2">
+      <div class="js-slick-carousel u-slick"
+           data-autoplay="true"
+           data-speed="5000"
+           data-infinite="true"
+           data-slides-show="6"
+           data-responsive='[{
+             "breakpoint": 1200,
+             "settings": {
+               "slidesToShow": 4
+             }
+           }, {
+             "breakpoint": 992,
+             "settings": {
+               "slidesToShow": 4
+             }
+           }, {
+             "breakpoint": 768,
+             "settings": {
+               "slidesToShow": 3
+             }
+           }, {
+             "breakpoint": 576,
+             "settings": {
+               "slidesToShow": 3
+             }
+           }, {
+             "breakpoint": 480,
+             "settings": {
+               "slidesToShow": 2
+             }
+           }]'>
+        <div class="js-slide">
+          <img class="u-clients" src="{% static 'assets/svg/clients-logo/amazon.svg' %}" alt="Image Description">
+        </div>
+        <div class="js-slide">
+          <img class="u-clients" src="{% static 'assets/svg/clients-logo/shopify.svg' %}" alt="Image Description">
+        </div>
+        <div class="js-slide">
+          <img class="u-clients" src="{% static 'assets/svg/clients-logo/paypal.svg' %}" alt="Image Description">
+        </div>
+        <div class="js-slide">
+          <img class="u-clients" src="{% static 'assets/svg/clients-logo/slack.svg' %}" alt="Image Description">
+        </div>
+        <div class="js-slide">
+          <img class="u-clients" src="{% static 'assets/svg/clients-logo/samsung.svg' %}" alt="Image Description">
+        </div>
+        <div class="js-slide">
+          <img class="u-clients" src="{% static 'assets/svg/clients-logo/google.svg' %}" alt="Image Description">
+        </div>
+        <div class="js-slide">
+          <img class="u-clients" src="{% static 'assets/svg/clients-logo/lenovo.svg' %}" alt="Image Description">
+        </div>
+        <div class="js-slide">
+          <img class="u-clients" src="{% static 'assets/svg/clients-logo/spotify.svg' %}" alt="Image Description">
+        </div>
+      </div>
+    </div>
+    <!-- End Clients Section -->
+
+    <hr class="my-0">
+
+    <!-- Process Section -->
+    <div class="container space-2 space-md-3">
+      <!-- Title -->
+      <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
+        <span class="btn btn-xs btn-soft-success btn-pill mb-2">Dlaczego e-BlueDesign</span>
+        <h2 class="text-primary">Tworzymy dla <span class="font-weight-semi-bold">wszystkich</span></h2>
+        <p>Strony internetowe, tworzymy dla każdej branży i każdego rodzaju biznesu.</p>
+      </div>
+      <!-- End Title -->
+
+      <div class="row">
+        <div class="col-md-4 mb-7 mb-md-0">
+          <!-- Process -->
+          <div class="text-center">
+            <div class="position-relative">
+              <div id="SVGcircleProcess1" class="svg-preloader u-indicator-dots min-height-155 mb-2">
+                <!-- Icon -->
+                <span class="text-success btn btn-lg btn-icon mt-7">
+                  <span class="fab fa-yelp font-size-5 btn-icon__inner btn-icon__inner-bottom-minus"></span>
+                </span>
+                <!-- End Icon -->
+
+                <!-- SVG Shape -->
+                <figure class="w-100 position-absolute top-0 right-0 left-0 z-index-n1">
+                  <img class="js-svg-injector" src="{% static 'assets/svg/components/circle-process-1.svg' %}" alt="Image Description"
+                       data-parent="#SVGcircleProcess1">
+                </figure>
+                <!-- End SVG Shape -->
+              </div>
+            </div>
+
+            <h3 class="h5">Professional Design</h3>
+            <p class="mb-md-0">Achieve virtually any design and layout from within the one template.</p>
+          </div>
+          <!-- End Process -->
+        </div>
+
+        <div class="col-md-4 mb-7 mb-md-0">
+          <!-- Process -->
+          <div class="text-center">
+            <div class="position-relative">
+              <div id="SVGcircleProcess2" class="svg-preloader u-indicator-dots min-height-155 mb-2">
+                <!-- Icon -->
+                <span class="text-primary btn btn-lg btn-icon mt-7">
+                  <span class="fas fa-fire font-size-5 btn-icon__inner btn-icon__inner-bottom-minus"></span>
+                </span>
+                <!-- End Icon -->
+
+                <!-- SVG Shape -->
+                <figure class="w-100 position-absolute top-0 right-0 left-0 z-index-n1">
+                  <img class="js-svg-injector" src="{% static 'assets/svg/components/circle-process-2.svg' %}" alt="Image Description"
+                       data-parent="#SVGcircleProcess2">
+                </figure>
+                <!-- End SVG Shape -->
+              </div>
+            </div>
+
+            <h3 class="h5">Front Strategy</h3>
+            <p class="mb-md-0">We strive to figure out ways to help your business grow through all platforms.</p>
+            <!-- End Process -->
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <!-- Process -->
+          <div class="text-center">
+            <div id="SVGcircleProcess3" class="svg-preloader min-height-155 mb-2">
+              <!-- Icon -->
+              <span class="text-danger btn btn-lg btn-icon mt-7">
+                <span class="fab fa-whmcs font-size-5 btn-icon__inner btn-icon__inner-bottom-minus"></span>
+              </span>
+              <!-- End Icon -->
+
+              <!-- SVG Shape -->
+                <figure class="w-100 position-absolute top-0 right-0 left-0 z-index-n1">
+                  <img class="js-svg-injector" src="{% static 'assets/svg/components/circle-process-3.svg' %}" alt="Image Description"
+                       data-parent="#SVGcircleProcess3">
+                </figure>
+                <!-- End SVG Shape -->
+            </div>
+
+            <h3 class="h5">Unlimited Power</h3>
+            <p class="mb-md-0">Find what you need in one template and combine features at will.</p>
+            <!-- End Process -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Process Section -->
+
+    <!-- Video Content Section -->
+    <div id="SVGwave1BottomSMShape" class="svg-preloader position-relative">
+      <div class="bg-img-hero text-center space-4" style="background-image: url(../../assets/img/1920x800/img1.jpg);">
+        <!-- Fancybox -->
+        <a class="js-fancybox d-inline-block u-media-player mb-4" href="javascript:;"
+           data-src="//vimeo.com/167434033"
+           data-speed="700"
+           data-animate-in="zoomIn"
+           data-animate-out="zoomOut"
+           data-caption="Front - Responsive Website Template">
+          <span class="u-media-player__icon u-media-player__icon--lg">
+            <span class="fas fa-play u-media-player__icon-inner"></span>
+          </span>
+        </a>
+        <!-- End Fancybox -->
+        <br>
+        <h4 class="d-inline-block text-white mb-0">Watch Front Video</h4>
+      </div>
+
+      <!-- SVG Background -->
+      <figure class="position-absolute right-0 bottom-0 left-0">
+        <img class="js-svg-injector" src="../../assets/svg/components/wave-1-bottom-sm.svg" alt="Image Description"
+             data-parent="#SVGwave1BottomSMShape">
+      </figure>
+      <!-- End SVG Background Section -->
+    </div>
+    <!-- End Video Content -->
+
+    <!-- Mockup Block Section -->
+    <div class="container space-top-2 space-top-md-3 space-bottom-3">
+      <!-- Title -->
+      <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
+        <span class="btn btn-xs btn-soft-primary btn-pill mb-2">Customize</span>
+        <h2 class="text-primary">Customization <span class="font-weight-semi-bold">first</span></h2>
+        <p>Enhance your brand with easy-to-use powerful customization features</p>
+      </div>
+      <!-- End Title -->
+
+      <div class="row justify-content-lg-between align-items-center">
+        <div class="col-md-6 col-lg-5 mb-7 mb-md-0">
+          <div class="pr-md-4">
+            <!-- Info -->
+            <div class="media mb-7">
+              <span class="btn btn-sm btn-icon btn-soft-primary rounded-circle mr-3">
+                <span class="btn-icon__inner">A.</span>
+              </span>
+              <div class="media-body">
+                <h3 class="h5 text-primary">Easy &amp; fast designing</h3>
+                <p>You can work with your existing website or create new pages on Front.</p>
+              </div>
+            </div>
+            <!-- End Info -->
+
+            <!-- Info -->
+            <div class="media mb-7">
+              <span class="btn btn-sm btn-icon btn-soft-primary rounded-circle mr-3">
+                <span class="btn-icon__inner">B.</span>
+              </span>
+              <div class="media-body">
+                <h3 class="h5 text-primary">Powerful features</h3>
+                <p>Easily draft, change, customize and launch new course pages with an easy-to-use template.</p>
+              </div>
+            </div>
+            <!-- End Info -->
+
+            <a class="btn btn-primary btn-wide btn-pill transition-3d-hover" href="index.html">Get Started <span class="fas fa-angle-right ml-2"></span></a>
+          </div>
+        </div>
+
+        <div id="SVGellipseMockup" class="col-md-6 svg-preloader">
+          <!-- SVG Mockup -->
+          <figure class="ie-ellipse-mockup">
+            <img class="js-svg-injector" src="../../assets/svg/illustrations/ellipse-mockup.svg" alt="Image Description"
+                 data-img-paths='[
+                   {"targetId": "#SVGellipseMockupImg1", "newPath": "../../assets/img/615x750/img1.jpg"}
+                 ]'
+                 data-parent="#SVGellipseMockup">
+          </figure>
+          <!-- End SVG Mockup -->
+        </div>
+      </div>
+    </div>
+    <!-- End Mockup Block Section -->
+
+    <!-- Mockup Block Section -->
+    <div class="container">
+      <div class="row justify-content-lg-between align-items-center">
+        <div class="col-md-6 col-lg-5 order-md-2 mb-7 mb-md-0">
+          <div class="pl-md-4">
+            <!-- Info -->
+            <div class="media mb-7">
+              <span class="btn btn-sm btn-icon btn-soft-success rounded-circle mr-3">
+                <span class="btn-icon__inner">C.</span>
+              </span>
+              <div class="media-body">
+                <h3 class="h5 text-success">Advanced HTML/CSS editing</h3>
+                <p>With Front, you or your team can modify any aspect of your website or pages with HTML/CSS.</p>
+              </div>
+            </div>
+            <!-- End Info -->
+
+            <!-- Info -->
+            <div class="media mb-7">
+              <span class="btn btn-sm btn-icon btn-soft-success rounded-circle mr-3">
+                <span class="btn-icon__inner">D.</span>
+              </span>
+              <div class="media-body">
+                <h3 class="h5 text-success">Fully optimized for Web &amp; Mobile</h3>
+                <p>Your website is fully responsive so visitors can view your content from their choice of device.</p>
+              </div>
+            </div>
+            <!-- End Info -->
+
+            <a class="btn btn-success btn-wide btn-pill transition-3d-hover" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">Purchase Now <span class="fas fa-angle-right ml-2"></span></a>
+          </div>
+        </div>
+
+        <div id="SVGellipseMockupReverse" class="col-md-6 order-md-1 svg-preloader">
+          <!-- SVG Mockup -->
+          <figure class="ie-ellipse-mockup">
+            <img class="js-svg-injector" src="../../assets/svg/illustrations/ellipse-mockup-reverse.svg" alt="Image Description"
+                 data-img-paths='[
+                   {"targetId": "#SVGellipseMockupReverseImg1", "newPath": "../../assets/img/615x750/img2.jpg"}
+                 ]'
+                 data-parent="#SVGellipseMockupReverse">
+          </figure>
+          <!-- End SVG Mockup -->
+        </div>
+      </div>
+    </div>
+    <!-- End Mockup Block Section -->
+
+    <!-- Blog Card Section -->
+    <div class="container space-top-3">
+      <div class="w-lg-65 mx-lg-auto">
+        <div class="card-deck d-block d-md-flex card-md-gutters-3">
+          <!-- Blog Card -->
+          <article class="card border-0 bg-primary text-white shadow-primary-lg transition-3d-hover mb-5 mb-md-0">
+            <div class="card-body p-6">
+              <span class="btn btn-lg btn-icon btn-soft-light rounded-circle mb-9">
+                <span class="fab fa-audible font-size-5 btn-icon__inner btn-icon__inner-bottom-minus"></span>
+              </span>
+              <small class="d-block text-white-70 text-uppercase mb-1">News</small>
+              <h3 class="h5 mb-3">Read our blogs to follow the latest news</h3>
+              <a class="btn btn-sm btn-soft-white btn-pill transition-3d-hover" href="#">Read Now</a>
+            </div>
+          </article>
+          <!-- End Blog Card -->
+
+          <!-- Blog Card -->
+          <article class="card border-0 shadow-sm transition-3d-hover">
+            <div class="card-body p-6">
+              <span class="btn btn-lg btn-icon btn-soft-primary rounded-circle mb-9">
+                <span class="far fa-file-archive font-size-5 btn-icon__inner btn-icon__inner-bottom-minus"></span>
+              </span>
+              <small class="d-block text-primary text-uppercase mb-1">Features</small>
+              <h3 class="h5 mb-3">Start exploring the docs and starters</h3>
+              <a class="btn btn-sm btn-soft-primary btn-pill transition-3d-hover" href="#">Read Now</a>
+            </div>
+          </article>
+          <!-- End Blog Card -->
+        </div>
+      </div>
+    </div>
+    <!-- End Blog Card Section -->
+
+    <!-- Subscribe Section -->
+    <div class="space-bottom-2">
+      <div class="container space-top-2 space-top-md-3">
+        <!-- Title -->
+        <div class="text-center w-md-60 mx-auto mb-7">
+          <h2 class="text-primary"><span class="font-weight-semi-bold">Stay</span> in the know</h2>
+          <p>Get special offers on the latest developments from Front.</p>
+        </div>
+        <!-- End Title -->
+
+        <!-- Subscribe Form -->
+        <div class="w-md-50 w-lg-40 mx-auto">
+          <form class="js-validate js-form-message">
+            <label class="sr-only" for="subscribeSrEmail">Enter your email address</label>
+            <div class="input-group input-group-lg input-group-borderless input-group-pill shadow-sm">
+              <input type="email" class="form-control" name="email" id="subscribeSrEmail" placeholder="Enter your email address" aria-label="Enter your email address" aria-describedby="subscribeButton" required>
+              <div class="input-group-append">
+                <button class="btn btn-white text-primary" type="submit" id="subscribeButton">
+                  <span class="fas fa-paper-plane"></span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- End Subscribe Form -->
+      </div>
+    </div>
+    <!-- End Subscribe Section -->
+
+    <!-- SVG Shape -->
+    <div id="SVGirregularShape2Bottom" class="svg-preloader w-100 position-absolute right-0 bottom-0 left-0 z-index-n1">
+      <figure class="ie-irregular-shape-2-bottom">
+        <img class="js-svg-injector" src="../../assets/svg/components/irregular-shape-2-bottom.svg" alt="Image Description"
+             data-parent="#SVGirregularShape2Bottom">
+      </figure>
+    </div>
+    <!-- End SVG Shape -->
+  </main>
+  <!-- ========== END MAIN ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="container space-2">
+    <div class="text-center">
+      <!-- Button -->
+      <button type="button" class="btn btn-xs btn-primary btn-wide btn-pill text-left mb-2 mb-sm-0 mr-1">
+        <span class="media align-items-center">
+          <span class="fab fa-apple font-size-2 mr-3"></span>
+          <span class="media-body">
+            <span class="d-block">Download on the</span>
+            <strong class="font-size-1">App Store</strong>
+          </span>
+        </span>
+      </button>
+      <!-- End Button -->
+
+      <!-- Button -->
+      <button type="button" class="btn btn-xs btn-primary btn-wide btn-pill text-left mb-2 mb-sm-0 ml-1">
+        <span class="media align-items-center">
+          <span class="fab fa-google-play font-size-2 mr-3"></span>
+          <span class="media-body">
+            <span class="d-block">Get it on</span>
+            <strong class="font-size-1">Google Play</strong>
+          </span>
+        </span>
+      </button>
+      <!-- End Button -->
+    </div>
+
+    <hr class="my-7">
+
+    <div class="row align-items-md-center">
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="d-flex align-items-center">
+          <!-- Logo -->
+          <a class="mr-3" href="index.html" aria-label="Front">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 46 46" xml:space="preserve">
+              <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"/>
+              <path class="fill-info" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"/>
+              <path class="fill-primary" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"/>
+              <path class="fill-white" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"/>
+            </svg>
+          </a>
+          <!-- End Logo -->
+
+          <p class="small mb-0">&copy; Front. 2018 Htmlstream.<br>All rights reserved.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 mb-4 mb-sm-0">
+        <!-- List -->
+        <ul class="list-inline list-group-flush list-group-borderless text-md-center mb-0">
+          <li class="list-inline-item px-2">
+            <a class="list-group-item-action" href="../pages/help.html">Help</a>
+          </li>
+          <li class="list-inline-item px-2">
+            <a class="list-group-item-action" href="../pages/terms.html">Terms</a>
+          </li>
+          <li class="list-inline-item px-2">
+            <a class="list-group-item-action" href="../pages/privacy.html">Privacy</a>
+          </li>
+        </ul>
+        <!-- End List -->
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <!-- Social Networks -->
+        <ul class="list-inline text-sm-right mb-0">
+          <li class="list-inline-item">
+            <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded-circle" href="#">
+              <span class="fab fa-facebook-f btn-icon__inner"></span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded-circle" href="#">
+              <span class="fab fa-google btn-icon__inner"></span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded-circle" href="#">
+              <span class="fab fa-twitter btn-icon__inner"></span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded-circle" href="#">
+              <span class="fab fa-github btn-icon__inner"></span>
+            </a>
+          </li>
+        </ul>
+        <!-- End Social Networks -->
+      </div>
+    </div>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to u-go-to" href="#"
+    data-position='{"bottom": 15, "right": 15 }'
+    data-type="fixed"
+    data-offset-top="400"
+    data-compensation="#header"
+    data-show-effect="slideInUp"
+    data-hide-effect="slideOutDown">
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="{% static 'assets/vendor/jquery/dist/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery-migrate/dist/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/popper.js/dist/umd/popper.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/bootstrap.min.js' %}"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="{% static 'assets/vendor/hs-megamenu/src/hs.megamenu.js' %}"></script>
+  <script src="{% static 'assets/vendor/svg-injector/dist/svg-injector.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery-validation/dist/jquery.validate.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/slick-carousel/slick/slick.js' %}"></script>
+  <script src="{% static 'assets/vendor/fancybox/jquery.fancybox.min.js' %}"></script>
+
+  <!-- JS Front -->
+  <script src="{% static 'assets/js/hs.core.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.header.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.unfold.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.validation.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.slick-carousel.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.fancybox.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.svg-injector.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.go-to.js' %}"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+    });
+
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate');
+
+      // initialization of slick carousel
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+      // initialization of fancybox
+      $.HSCore.components.HSFancyBox.init('.js-fancybox');
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+{% load static %}
+        <!-- Nav -->
+        <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
+          <!-- Logo -->
+          <a href="{% url 'app:home' %}" aria-label="TG Website">
+		        <img class="navbar-left" style="max-width:240px; margin-top: -0px;" src="{% static 'assets/img/logos/front-logo-5.png' %}" alt="TG Website Logo">
+          </a>
+          <!-- End Logo -->
+
+          <!-- Responsive Toggle Button -->
+          <button type="button" class="navbar-toggler btn u-hamburger"
+                  aria-label="Toggle navigation"
+                  aria-expanded="false"
+                  aria-controls="navBar"
+                  data-toggle="collapse"
+                  data-target="#navBar">
+            <span id="hamburgerTrigger" class="u-hamburger__box">
+              <span class="u-hamburger__inner"></span>
+            </span>
+          </button>
+          <!-- End Responsive Toggle Button -->
+
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+            <ul class="navbar-nav u-header__navbar-nav">
+
+              <!-- Reference -->
+              <li class="nav-item u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="{% url 'realization:home' %}">Realizacje</a>
+              </li>
+              <!-- End Reference -->
+              
+              <!-- Reference -->
+              <li class="nav-item u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="{% url 'app:reviews' %}">Opinie</a>
+              </li>
+              <!-- End Reference -->
+              
+              <!-- Docs -->
+              <li class="nav-item hs-has-mega-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut"
+                  data-max-width="680px"
+                  data-position="right">
+                <a id="demosMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Oferta</a>
+
+                <!-- Demos - Mega Menu -->
+                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="demosMegaMenu">
+                  <div class="row no-gutters">
+                    <div class="col-md-6">
+                      <!-- Promo Item -->
+                      <div class="u-header__promo-item">
+                        <a class="u-header__promo-link" href="{% url 'app:portal' %}">
+                          <div class="media align-items-center">
+                            <img class="js-svg-injector u-header__promo-icon" src="{% static 'assets/svg/icons/icon-5.svg' %}" alt="SVG">
+                            <div class="media-body">
+                              <span class="u-header__promo-title">Portale internetowe</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- End Promo Item -->
+
+                      <!-- Promo Item -->
+                      <div class="u-header__promo-item">
+                        <a class="u-header__promo-link" href="{% url 'app:shop' %}">
+                          <div class="media align-items-center">
+                            <img class="js-svg-injector u-header__promo-icon" src="{% static 'assets/svg/icons/icon-52.svg' %}" alt="SVG">
+                            <div class="media-body">
+                              <span class="u-header__promo-title">Sklepy internetowe</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- End Promo Item -->
+
+                      <!-- Promo Item -->
+                      <div class="u-header__promo-item">
+                        <a class="u-header__promo-link" href="{% url 'app:on_page_website' %}">
+                          <div class="media align-items-center">
+                            <img class="js-svg-injector u-header__promo-icon" src="{% static 'assets/svg/icons/icon-40.svg' %}" alt="SVG">
+                            <div class="media-body">
+                              <span class="u-header__promo-title">Strony wizytówki</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- End Promo Item -->
+					  
+                      <!-- Promo Item -->
+                      <div class="u-header__promo-item">
+                        <a class="u-header__promo-link" href="{% url 'app:e_marketing' %}">
+                          <div class="media align-items-center">
+                            <img class="js-svg-injector u-header__promo-icon" src="{% static 'assets/svg/icons/icon-7.svg' %}" alt="SVG">
+                            <div class="media-body">
+                              <span class="u-header__promo-title">E-marketing</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- End Promo Item -->
+                    </div>
+
+                    <!-- Promo -->
+                    <div class="col-md-6 u-header__promo">
+                      <a class="d-block u-header__promo-inner" href="{% url 'realization:realization' "porownywarka-bankowa" %}">
+                        <div class="position-relative">
+                          <img class="img-fluid rounded mb-3" src="{% static 'assets/img/380x270/img16.jpg' %}" alt="Image Description">
+                          <span class="badge badge-success badge-pill badge-pos shadow-sm mt-3">Projekt<br>miesiąca</span>
+                        </div>
+                        <span class="text-secondary font-size-1">Co miesiąc prezentujemy szczegółowo jedną realizację, którą wykonaliśmy dla naszego klienta. Czytaj więcej!</span>
+                      </a>
+                    </div>
+                    <!-- End Promo -->
+                  </div>
+                </div>
+                <!-- End Demos - Mega Menu -->
+              </li>
+              <!-- End Demos -->
+              
+              <!-- Reference -->
+              <li class="nav-item u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="{% url 'blog:post_list' %}">Nowości</a>
+              </li>
+              <!-- End Reference -->
+			  
+              <!-- Contact -->
+              <li class="nav-item u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="{% url 'app:contact' %}">Kontakt</a>
+              </li>
+              <!-- End Contact -->
+              
+              <li class="nav-item u-header__nav-item">
+                <div class="position-relative">
+                  <a class="nav-link u-header__nav-link" href="{% url 'en_app:home' %}">
+                    <img class="dropdown-item-icon" src="{% static 'assets/vendor/flag-icon-css/flags/4x3/gb.svg' %}" alt="TG Website Language">
+                    <span class="d-sm-inline-block">EN</span>
+                  </a>
+                </div>
+              </li>
+
+              <!-- Button -->
+              <li class="nav-item u-header__nav-last-item">
+                <a class="btn btn-sm btn-primary transition-3d-hover" href="{% url 'app:valuation' %}">
+                  Wycena
+                </a>
+              </li>
+              <!-- End Button -->
+            </ul>
+          </div>
+          <!-- End Navigation -->
+        </nav>
+        <!-- End Nav -->

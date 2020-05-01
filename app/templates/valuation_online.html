@@ -1,0 +1,224 @@
+{% load static %}
+{% load crispy_forms_tags %}
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138460085-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138460085-3');
+  </script>
+
+  <!-- Title -->
+  <title>TG Website| Wycena online |tel. 514 583 389.</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{% static 'assets/img/logos/logo-sm.png' %}">
+
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="{% static 'assets/vendor/font-awesome/css/fontawesome-all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/animate.css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/hs-megamenu/src/hs.megamenu.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css' %}">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="{% static 'assets/css/theme.css' %}">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header">
+    <div class="u-header__section">
+
+      <div id="logoAndNav" class="container">
+        <!-- Nav -->
+          {% include "basic/navbar.html" %}
+        <!-- End Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN ========== -->
+  <main id="content" role="main">
+    <!-- Hire Us Title Section -->
+    <div id="SVGheroBgElements" class="svg-preloader position-relative overflow-hidden">
+      <div class="container space-top-2 space-bottom-3 space-top-md-5 space-lg-4">
+        <div class="w-md-80 w-lg-50 text-center mx-md-auto">
+          <h1 class="text-primary"><span class="font-weight-semi-bold">Wycena online</span></h1>
+          <p class="lead">Potrzebujesz wyceny strony internetowej? Wypełnij krótki formularz i uzyskaj wycenę w ciągu 24 godzin.</p>
+        </div>
+      </div>
+
+      <!-- SVG Bottom Shape -->
+      <figure class="position-absolute right-0 bottom-0 left-0">
+        <img class="js-svg-injector" src="{% static 'assets/svg/components/wave-4-bottom.svg' %}" alt="Image Description"
+             data-parent="#SVGheroBgElements">
+      </figure>
+      <!-- End SVG Bottom Shape -->
+    </div>
+    <!-- End Hire Us Title Section -->
+
+    <!-- Hire Us Form Section -->
+    <div class="container space-bottom-2" id="BasiFormVluation">
+      <!-- Hire Us Form -->
+      <div class="w-lg-50 mx-auto">
+	      {% if send %}
+		  <div class="text-center">
+		  <h1>Formularz wysłany prawidłowo.</h1>
+		  <h5>W pilnych sprawach skontaktuj się z nami telefonicznie <a href="mailto:biuro@e-bluedesign.co">+48 505 580 258</a>.</h5>
+          <img class="js-svg-injector" src="{% static 'assets/img/png/img2.png' %}" alt="SVG Illustration"
+               data-parent="#SVGhireUsBg">
+		  </div>
+		  <a href="{% url 'app:home' %}">
+		  <button type="button" class="btn btn-block btn-primary btn-pill transition-3d-hover">Wróć do strony głównej</button>
+		  <a>
+		  {% else %}
+		  <form method="post" action="/wycena-online/#BasiFormVluation">
+			{% csrf_token %}
+			{{ form|crispy }}
+			
+			<div class="custom-control custom-radio custom-control-inline">
+			  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required
+			         data-msg="Zaakceptuj regulamin."
+                     data-error-class="u-has-error"
+                     data-success-class="u-has-success">
+			  <label class="custom-control-label" for="customRadioInline1">Akceptuje <a href="{% url 'app:privacy_policy' %}">regulamin</a> i <a href="{% url 'app:privacy_policy' %}">polityke prywatności</a></label>
+			</div>
+			<div class="text-center">
+				<button type="submit" class="btn click-me-load btn-primary mt-4">Wyślij formularz wyceny</button>
+			</div>
+		  </form>
+		  {% endif %}
+      </div>
+      <!-- End Hire Us Form -->
+    </div>
+    <!-- End Hire Us Form Section -->
+
+    <!-- Features Section -->
+    <div id="SVGelements" class="svg-preloader">
+      <div class="gradient-half-primary-v3">
+        <div class="container space-bottom-2">
+          <div class="w-60 mx-auto">
+            <!-- SVG Icon -->
+            <figure class="ie-app-development">
+              <img class="js-svg-injector" src="{% static 'assets/svg/illustrations/app-development.svg' %}" alt="SVG Illustration"
+                   data-parent="#SVGelements" crossorigin="anonymous">
+            </figure>
+            <!-- End SVG Icon -->
+          </div>
+        </div>
+      </div>
+
+      <!-- SVG Background -->
+      <figure class="position-absolute right-0 bottom-0 left-0">
+        <img class="js-svg-injector" src="{% static 'assets/svg/components/wave-1-bottom-sm.svg' %}" alt="Image Description"
+             data-parent="#SVGelements" crossorigin="anonymous">
+      </figure>
+      <!-- End SVG Background -->
+    </div>
+    <!-- End Features Section -->
+  </main>
+  <!-- ========== END MAIN ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  {% include "basic/footer.html" %}
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- JS Global Compulsory -->
+  <script src="{% static 'assets/vendor/jquery/dist/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery-migrate/dist/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/popper.js/dist/umd/popper.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/bootstrap.min.js' %}"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="{% static 'assets/vendor/hs-megamenu/src/hs.megamenu.js' %}"></script>
+  <script src="{% static 'assets/vendor/svg-injector/dist/svg-injector.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery-validation/dist/jquery.validate.min.js' %}"></script>
+
+  <!-- JS Front -->
+  <script src="{% static 'assets/js/hs.core.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.header.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.unfold.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.malihu-scrollbar.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.validation.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.focus-state.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.show-animation.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.svg-injector.js' %}"></script>
+  <script src="{% static 'assets/js/components/hs.go-to.js' %}"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+    });
+
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+        afterOpen: function () {
+          $(this).find('input[type="search"]').focus();
+        }
+      });
+
+      // initialization of malihu scrollbar
+      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+      // initialization of show animations
+      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate', {
+        rules: {
+          confirmPassword: {
+            equalTo: '#signupPassword'
+          }
+        }
+      });
+
+      // initialization of forms
+      $.HSCore.components.HSFocusState.init();
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+	$(document).ready(function() {
+	  $('.click-me-load').on('click', function() {
+		var $this = $(this);
+		var loadingText = '<i class="spinner-border spinner-border-sm"></i> wczytywanie...';
+		if ($(this).html() !== loadingText) {
+		  $this.data('original-text', $(this).html());
+		  $this.html(loadingText);
+		}
+		setTimeout(function() {
+		  $this.html($this.data('original-text'));
+		}, 2000);
+	  });
+	})
+  </script>
+</body>
+</html>
